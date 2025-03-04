@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 export default function ExperienceSection() {
   return (
@@ -16,6 +15,7 @@ export default function ExperienceSection() {
             Das Alter bringt viele Hürden mit sich. Diese werden wir gemeinsam
             mit unseren Betreuerinnen überwinden!
           </h2>
+
           <p className="text-[15px] md:text-[18px] lg:text-[20px] text-[#1B1B1B] mb-4">
             Sichere und zuverlässige Betreuung: Wir bieten seit 15 Jahren eine
             qualitativ hochwertige Pflege an, bei der wir jedem Kunden besondere

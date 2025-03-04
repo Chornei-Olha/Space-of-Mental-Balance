@@ -1,10 +1,11 @@
 import Header from "@/app/components/Header";
 import HeroSection from "@/app/components/HeroSection";
-import CareSection from "./components/CareSection";
-import InfoSection from "./components/InfoSection";
-import ExperienceSection from "./components/ExperienceSection";
-import CustomerReviews from "./components/CustomerReviews";
-import QuoteSection from "./components/QuoteSection";
+import CareSection from "@/app/components/CareSection";
+import Hands from "@/app/components/Hands";
+import InfoSection from "@/app/components/InfoSection";
+import ExperienceSection from "@/app/components/ExperienceSection";
+import CustomerReviews from "@/app/components/CustomerReviews";
+import QuoteSection from "@/app/components/QuoteSection";
 import Text from "@/app/components/Text";
 import Footer from "@/app/components/Footer";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CareSection />
+      <Hands />
       <ExperienceSection />
       <InfoSection />
       <CustomerReviews />

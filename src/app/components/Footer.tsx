@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { Space_Grotesk } from "next/font/google";
 
