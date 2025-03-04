@@ -12,7 +12,7 @@ export default function ExperienceSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Левая часть: Заголовок и текст */}
         <div>
-          <h2 className="font-['Instrument_Sans'] text-[30px] md:text-[35px] lg:text-[40px] font-normal text-black leading-tight mb-6">
+          <h2 className="font-['Instrument_Sans'] text-[20px] md:text-[25px] lg:text-[30px] font-normal text-black leading-tight mb-6">
             Das Alter bringt viele Hürden mit sich. Diese werden wir gemeinsam
             mit unseren Betreuerinnen überwinden!
           </h2>
