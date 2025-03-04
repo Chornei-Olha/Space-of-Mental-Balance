@@ -2,6 +2,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Space_Grotesk } from "next/font/google";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: "400" });
 
@@ -13,44 +17,33 @@ export default function CustomerReviews() {
     "/assets/review4.png",
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(2);
   const [slideWidth, setSlideWidth] = useState(392);
-  const gap = 42;
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const updateSlideWidth = () => {
-      if (window.innerWidth < 768) {
+    const updateScreenSize = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
         setSlidesToShow(1);
-        setSlideWidth(window.innerWidth - 10); // Полная ширина экрана с отступами
-      } else if (window.innerWidth < 1024) {
+        setSlideWidth(width - 10);
+        setIsMobile(true);
+      } else if (width < 1024) {
         setSlidesToShow(2);
-        setSlideWidth(300); // Уменьшенные карточки
+        setSlideWidth(300);
+        setIsMobile(false);
       } else {
         setSlidesToShow(2);
-        setSlideWidth(392); // Десктоп
+        setSlideWidth(392);
+        setIsMobile(false);
       }
     };
 
-    window.addEventListener("resize", updateSlideWidth);
-    updateSlideWidth();
+    window.addEventListener("resize", updateScreenSize);
+    updateScreenSize();
 
-    return () => window.removeEventListener("resize", updateSlideWidth);
+    return () => window.removeEventListener("resize", updateScreenSize);
   }, []);
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - slidesToShow : prevIndex - 1
-    );
-  };
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - slidesToShow ? 0 : prevIndex + 1
-    );
-  };
-
-  const translateValue = `translateX(-${currentIndex * (slideWidth + gap)}px)`;
 
   return (
     <section className="w-full bg-[#EFF2F7] pt-[45px] pb-[45px] px-6 md:px-[70px] md:pt-[55px] md:pb-[55px] lg:px-[90px] lg:pt-[65px] lg:pb-[65px]">
@@ -62,41 +55,53 @@ export default function CustomerReviews() {
           >
             Unsere Kunden halten uns für die besten
           </h2>
-          <div className="flex gap-5 justify-center md:justify-start lg:justify-start">
-            {/* Стрелки влево и вправо */}
-            <button
-              className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-2 border-[#1C5107] hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
-              onClick={prevImage}
-            >
-              ‹
-            </button>
-            <button
-              className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-2 border-[#1C5107] hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
-              onClick={nextImage}
-            >
-              ›
-            </button>
-          </div>
+          {/* Кнопки навигации — показываем только на планшете и десктопе */}
+          {!isMobile && (
+            <div className="flex gap-5 justify-center md:justify-start lg:justify-start">
+              <button
+                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-2 border-[#1C5107] hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+                id="prevBtn"
+              >
+                ‹
+              </button>
+              <button
+                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-2 border-[#1C5107] hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+                id="nextBtn"
+              >
+                ›
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* Средняя и правая колонки: Две картинки (слайдер) */}
-        <div className="col-span-2 flex justify-center gap-13 overflow-hidden mt-[50px] md:mt-[0px] lg:mt-[0px]">
-          <div
-            className="flex transition-transform duration-500"
-            style={{ transform: translateValue }}
+        {/* Средняя и правая колонки: Слайдер с изображениями */}
+        <div className="col-span-2 mt-[50px] md:mt-[0px] lg:mt-[0px]">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={42}
+            slidesPerView={slidesToShow}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            grabCursor={true}
+            navigation={
+              !isMobile ? { prevEl: "#prevBtn", nextEl: "#nextBtn" } : false
+            } // Кнопки навигации только на десктопе
+            className="flex justify-center overflow-hidden"
           >
             {images.map((src, index) => (
-              <div key={index} className="flex-shrink-0 mx-[21px]">
-                <Image
-                  src={src}
-                  alt={`Customer Review ${index + 1}`}
-                  width={slideWidth}
-                  height={410}
-                  className="rounded-lg object-cover max-w-[85%] "
-                />
-              </div>
+              <SwiperSlide key={index}>
+                <div className="flex-shrink-0">
+                  <Image
+                    src={src}
+                    alt={`Customer Review ${index + 1}`}
+                    width={slideWidth}
+                    height={410}
+                    className="rounded-lg object-cover max-w-[85%] "
+                  />
+                </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </div>
     </section>
