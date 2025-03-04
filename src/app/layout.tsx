@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+// Импортируем шрифты
+const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
 
 const SITE_NAME = "Solterra";
 const SITE_DESCRIPTION =
   "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.";
-// const DOMAIN = process.env.NEXT_PUBLIC_API_DOMAIN;
 
 export const metadata: Metadata = {
   title: "Solterra",
@@ -28,12 +28,11 @@ export default function RootLayout({
         <title>{SITE_NAME}</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         {/* Facebook Meta Tags */}
-        {/* <meta property="og:url" content={DOMAIN} /> */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={SITE_NAME} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${instrumentSans.className}`}>{children}</body>
     </html>
   );
 }

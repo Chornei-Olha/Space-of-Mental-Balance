@@ -39,7 +39,7 @@ export default function HeroSection() {
       </div>
 
       {/* Блок с текстом */}
-      <div className="absolute top-1/2 md:top-auto md:bottom-0 right-0 transform translate-y-[-50%] md:translate-y-0 p-8 text-white z-20 w-full md:w-1/2 md:text-left text-center">
+      <div className="absolute top-1/2 md:top-auto md:bottom-0 right-0 transform translate-y-[-50%] md:translate-y-0 p-4 md:p-8 text-white z-20 w-full md:w-1/2 md:text-left text-center">
         <h1 className="leading-tight text-[45px] mt-[400px] md:text-[70px] md:mt-[200px] lg:text-[100px] lg:mt-[270px] text-left">
           Betreuung <br />
           <span className="text-[20px] md:text-[50px] lg:text-[70px]">

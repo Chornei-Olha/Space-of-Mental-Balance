@@ -5,7 +5,8 @@ import InfoSection from "./components/InfoSection";
 import ExperienceSection from "./components/ExperienceSection";
 import CustomerReviews from "./components/CustomerReviews";
 import QuoteSection from "./components/QuoteSection";
-import Footer from "@/app/components/Footer";
+import Text from "@/app/components/Text";
+import Footer from "@/app/components/Text";
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CareSection />
-      <InfoSection />
       <ExperienceSection />
+      <InfoSection />
       <CustomerReviews />
       <QuoteSection />
+      <Text />
       <Footer />
     </main>
   );
