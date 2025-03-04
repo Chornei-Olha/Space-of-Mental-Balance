@@ -5,7 +5,7 @@ export default function CareSection() {
     <section id="about" className="w-full px-4 md:px-16 lg:px-24 py-7 bg-white">
       <p className="text-black text-[12px] pb-[16px]">Über uns</p>
       {/* Заголовок */}
-      <h2 className="text-center md:text-left lg:text-left text-[18px] md:text-[30px] lg:text-[40px] font-bold mb-6 text-black">
+      <h2 className="text-center md:text-left lg:text-left text-[18px] md:text-[30px] lg:text-[40px] mb-6 text-black">
         Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir
         bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in
         Österreich und Deutschland.{" "}

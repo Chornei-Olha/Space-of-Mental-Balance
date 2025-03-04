@@ -6,7 +6,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import CustomerReviews from "./components/CustomerReviews";
 import QuoteSection from "./components/QuoteSection";
 import Text from "@/app/components/Text";
-import Footer from "@/app/components/Text";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
