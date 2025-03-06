@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="mb-2">Deutschland</p>
           </div>
           <div
-            className={`flex flex-col items-center md:items-start ${spaceGrotesk.className}`}
+            className={`flex flex-col items-center md:items-start ${spaceGrotesk.className} text-[14px]`}
           >
             <a
               href="https://www.daheimbetreut.at/de/impressum"

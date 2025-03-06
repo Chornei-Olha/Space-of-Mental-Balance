@@ -48,7 +48,9 @@ export default function HeroSection() {
           Stunden
         </h1>
         <div className="flex md:justify-start space-x-1 md:space-x-4 my-4 text-[15px] md:text-[20px] text-left">
-          <span className="border border-white rounded-[50%] py-1 px-3">➘</span>
+          <span className="border border-white rounded-full py-1 px-3 w-10 h-10">
+            ➘
+          </span>
           <span className="border border-white rounded-lg py-1 px-3">
             Liebe
           </span>

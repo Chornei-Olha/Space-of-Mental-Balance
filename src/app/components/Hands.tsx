@@ -33,7 +33,7 @@ export default function CareSection() {
             nach Hause und die 24 Stunden Betreuung beginnt.
           </p>
           <a href="tel:+4368184242756">
-            <button className="mb-6 bg-white text-[#1C5107] p-5 rounded-3xl hover:text-black hover:border-2 hover:border-black flex items-center gap-2">
+            <button className="w-fit mt-6 px-6 py-3 bg-white text-[#1C5107] text-[18px] font-medium rounded-[70px] flex items-center gap-2 hover:bg-[#174406] hover:border-white hover:text-white transition">
               <PhoneIcon className="h-6 w-6 text-[#1C5107]" /> RUFEN SIE UNS AN
             </button>
           </a>
