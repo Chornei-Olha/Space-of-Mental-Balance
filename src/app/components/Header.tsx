@@ -13,7 +13,17 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full p-4 flex justify-end items-center bg-[#8da883] shadow-md relative">
+    <header className="w-full p-4 flex justify-between items-center bg-[#8da883] shadow-md relative">
+      <div>
+        <a
+          href="tel:+4368184242756"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white mb-2 tracking-widest hover:text-[#1C5107]"
+        >
+          +4368184242756
+        </a>
+      </div>
       <div className="flex items-center gap-4">
         <button className="bg-transparent border-none text-lg text-white">
           Menü
@@ -25,6 +35,7 @@ export default function Header() {
           ☰
         </button>
       </div>
+
       {menuOpen && (
         <nav className="absolute top-12 text-left bg-white p-6 rounded-lg shadow-lg z-50 flex flex-col gap-3">
           <button

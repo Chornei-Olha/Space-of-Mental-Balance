@@ -17,7 +17,7 @@ export default function ExperienceSection() {
           </h2>
 
           <p className="text-[15px] md:text-[18px] lg:text-[20px] text-[#1B1B1B] mb-4">
-            Sichere und zuverlässige Betreuung: Wir bieten seit 15 Jahren eine
+            Sichere und zuverlässige Betreuung: Wir bieten seit 7 Jahren eine
             qualitativ hochwertige Pflege an, bei der wir jedem Kunden besondere
             Aufmerksamkeit schenken. Sie können sicher sein, dass Ihre
             Angehörigen qualifiziert und liebevoll betreut werden.
