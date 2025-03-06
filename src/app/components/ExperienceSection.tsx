@@ -4,7 +4,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="services"
-      className="w-full bg-white py-16 px-6 md:px-16 lg:px-24"
+      className="w-full bg-white pb-5 pt-16 px-6 md:px-16 lg:px-24"
     >
       <p className="text-black text-[12px] pb-[16px]">Unsere Vorteile</p>
 
