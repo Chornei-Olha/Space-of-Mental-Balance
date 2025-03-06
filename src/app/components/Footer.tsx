@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: "400" });
