@@ -46,7 +46,18 @@ export default function HeroSection() {
             24
           </span>{" "}
           Stunden
+          <br />
+          <span className="text-[20px] leading-none md:text-[23px] lg:text-[45px]">
+            DAHEIM BETREUUNG
+          </span>
         </h1>
+        <div>
+          {" "}
+          {/* <p className="leading-tight text-[35px] mt-[400px] md:text-[60px] md:mt-[200px] lg:text-[80px] lg:mt-[270px] text-left">
+            DAHEIM <br />
+            BETREUUNG
+          </p> */}
+        </div>
         <div className="flex md:justify-start space-x-1 md:space-x-4 my-4 text-[15px] md:text-[20px] text-left">
           <span className="border border-white rounded-full py-1 px-3 w-10 h-10">
             ➘
