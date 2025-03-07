@@ -1,4 +1,4 @@
-import { FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: "400" });
@@ -72,6 +72,14 @@ export default function Footer() {
             className="text-white hover:text-[#1C5107]"
           >
             <FaWhatsapp size={25} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/betreuung-zu-hause-a9b2b7355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#1C5107]"
+          >
+            <FaLinkedin size={25} />
           </a>
           <a
             href="mailto:office.betreuung24stunden@gmail.com"
