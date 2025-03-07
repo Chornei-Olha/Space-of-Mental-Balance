@@ -1,4 +1,4 @@
-import { FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: "400" });
@@ -21,6 +21,8 @@ export default function Footer() {
             >
               +4368184242756
             </a>
+
+            <p className="mb-2">Österreich</p>
             <p className="mb-2">Deutschland</p>
           </div>
           <div
@@ -56,7 +58,7 @@ export default function Footer() {
         {/* Ссылки на соцсети */}
         <div className="flex justify-center space-x-10">
           <a
-            href="https: //www.facebook.com/share/1ELcqR64PT/"
+            href="https://www.facebook.com/people/Betreuung-Zu-Hause-Betreuung/pfbid0SqLfHvb332Ko7aRKrb8g83ndVEn8UWGHZxYEHjwYML5YxrkPCDihaT4DpEZQagQol/?rdid=BkuZ2SFRakKbKMgj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15uxoXrHqR%2F"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-[#1C5107]"
@@ -70,6 +72,12 @@ export default function Footer() {
             className="text-white hover:text-[#1C5107]"
           >
             <FaWhatsapp size={25} />
+          </a>
+          <a
+            href="mailto:office.betreuung24stunden@gmail.com"
+            className="text-white hover:text-[#1C5107]"
+          >
+            <FaEnvelope size={25} />
           </a>
         </div>
 

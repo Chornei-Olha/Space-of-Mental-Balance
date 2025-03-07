@@ -70,10 +70,13 @@ export default function HeroSection() {
           Betreuung finden →
         </a>
         <p className="mt-4 text-[15px] md:text-[18px] lg:text-[20px] text-left">
-          Ich biete individuelle Betreuung für ältere Menschen mit Liebe,
+          Wir bieten Betreuung für ältere Menschen mit Liebe,
           <br />
-          Fürsorge und Verantwortung. Ich helfe Ihren Angehörigen im <br />
+          Fürsorge und Verantwortung. Wir helfen Angehörigen im <br />
           Alltag und sorge für Komfort, Sicherheit und seelische Wärme.
+        </p>
+        <p className="mt-4 mb-4 text-left text-[13px]">
+          In Österreich Und Deutschland
         </p>
       </div>
     </section>
