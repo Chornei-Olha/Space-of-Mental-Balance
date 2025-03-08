@@ -58,7 +58,7 @@ export default function Footer() {
         {/* Ссылки на соцсети */}
         <div className="flex justify-center space-x-10">
           <a
-            href="https://www.facebook.com/people/Betreuung-Zu-Hause-Betreuung/pfbid0SqLfHvb332Ko7aRKrb8g83ndVEn8UWGHZxYEHjwYML5YxrkPCDihaT4DpEZQagQol/?rdid=BkuZ2SFRakKbKMgj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15uxoXrHqR%2F"
+            href="https://www.facebook.com/profile.php?id=61558576380840"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-[#1C5107]"
@@ -66,7 +66,7 @@ export default function Footer() {
             <FaFacebook size={25} />
           </a>
           <a
-            href="https://www.whatsapp.com/"
+            href="https://wa.me/4368184242756"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-[#1C5107]"

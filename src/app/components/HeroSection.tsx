@@ -25,10 +25,8 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* <div className="absolute md:right-0 w-full md:w-1/2 h-full bg-opacity-50 md:backdrop-blur-lg"></div> */}
-
       {/* Добавляем блюренное изображение и на мобилку */}
-      <div className="absolute top-[50vh] md:top-0 right-0 w-full h-[600px] md:w-1/2 md:h-full">
+      <div className="absolute top-[47vh] md:top-0 right-0 w-full h-[600px] md:w-1/2 md:h-full">
         <Image
           src="/assets/blur.png"
           alt="Blurred Background"
@@ -40,7 +38,7 @@ export default function HeroSection() {
 
       {/* Блок с текстом */}
       <div className="absolute top-1/2 md:top-auto md:bottom-0 right-0 transform translate-y-[-50%] md:translate-y-0 p-4 md:p-8 text-white z-20 w-full md:w-1/2 md:text-left text-center">
-        <h1 className="leading-tight text-[45px] mt-[400px] md:text-[70px] md:mt-[200px] lg:text-[100px] lg:mt-[270px] text-left">
+        <h1 className="leading-none text-[45px] mt-[400px] md:text-[70px] md:mt-[200px] lg:text-[100px] lg:mt-[270px] text-left">
           Betreuung <br />
           <span className="text-[40px] md:text-[65px] lg:text-[90px]">
             24
@@ -51,13 +49,7 @@ export default function HeroSection() {
             DAHEIM BETREUUNG
           </span>
         </h1>
-        <div>
-          {" "}
-          {/* <p className="leading-tight text-[35px] mt-[400px] md:text-[60px] md:mt-[200px] lg:text-[80px] lg:mt-[270px] text-left">
-            DAHEIM <br />
-            BETREUUNG
-          </p> */}
-        </div>
+        <div></div>
         <div className="flex md:justify-start space-x-1 md:space-x-4 my-4 text-[15px] md:text-[20px] text-left">
           <span className="border border-white rounded-full py-1 px-3 w-10 h-10">
             ➘
