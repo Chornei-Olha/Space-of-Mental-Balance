@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="absolute top-0 left-0 w-full z-50 px-6 md:px-16 py-9 flex justify-between items-center">
+    <header className="container absolute top-0  w-full z-50 py-9 flex justify-between items-center mx-auto">
       <h1 className="text-yellow-300 text-xl font-semibold">
         Peace of MindTherapy
       </h1>

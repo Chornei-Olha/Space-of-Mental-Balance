@@ -10,7 +10,7 @@ export default function HelpSection() {
           <h2 className="text-2xl font-semibold mb-2 text-[#2D2D2D]">
             Do you need help?
           </h2>
-          <p className="text-[#2D2D2D]">
+          <p className="text-[#2D2D2D] w-[56%]">
             We will provide detailed information about our services, types of
             work, and top projects. We will calculate the cost and prepare a
             commercial proposal.
@@ -20,7 +20,7 @@ export default function HelpSection() {
         {/* Правая часть с кнопкой и фоном */}
         <div className="relative flex items-center justify-center min-w-[300px] px-10 text-white">
           {/* Синее круговое изображение, обрезанное контейнером */}
-          <div className="absolute -left-32 -top-1/2 w-[400px] h-[400px]">
+          <div className="absolute -left-32 w-[600px] h-[600px]">
             <Image
               src="/assets/Ellipse.png"
               alt="Blue Circle"
@@ -31,7 +31,7 @@ export default function HelpSection() {
           </div>
 
           {/* Кнопка поверх круга */}
-          <button className="relative z-10 bg-gradient-to-r from-cyan-400 to-sky-500 text-white px-6 py-3 rounded-full font-medium hover:brightness-110 transition">
+          <button className="relative z-10 text-white pr-[20%] py-3 rounded-full font-medium hover:brightness-110 transition">
             Get consultation →
           </button>
         </div>

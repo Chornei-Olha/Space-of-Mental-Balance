@@ -36,7 +36,7 @@ export default function EducationSection() {
       )}
 
       <section className="py-16 ">
-        <div className="max-w-7xl mx-auto text-[#09234B]">
+        <div className="container mx-auto text-[#09234B]">
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 ">
             {/* КАРТОЧКА 1 */}
             <div>
