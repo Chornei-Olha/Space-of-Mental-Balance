@@ -6,14 +6,14 @@ import Head from "next/head";
 // Импортируем шрифты
 const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
 
-const SITE_NAME = "Solterra";
+const SITE_NAME = "A space of mental balance";
 const SITE_DESCRIPTION =
-  "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.";
+  "We combine professional therapeutic practices with creative methods to help you restore harmony of body, mind and spirit.";
 
 export const metadata: Metadata = {
-  title: "Solterra",
+  title: "A space of mental balance",
   description:
-    "Suchen Sie nette, fleißige, erfahrene Betreuerinnen für Ihre Eltern? Wir bieten häusliche 24 Stunden Seniorenbetreuung und Haushalte in Österreich und Deutschland.",
+    "We combine professional therapeutic practices with creative methods to help you restore harmony of body, mind and spirit.",
 };
 
 export default function RootLayout({

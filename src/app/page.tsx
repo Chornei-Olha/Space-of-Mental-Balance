@@ -1,26 +1,24 @@
 import Header from "@/app/components/Header";
 import HeroSection from "@/app/components/HeroSection";
-import CareSection from "@/app/components/CareSection";
-import Hands from "@/app/components/Hands";
-import InfoSection from "@/app/components/InfoSection";
-import ExperienceSection from "@/app/components/ExperienceSection";
+import AboutUs from "./components/AboutUs";
+import Cards from "@/app/components/Cards";
+import HelpSection from "@/app/components/HelpSection";
 import CustomerReviews from "@/app/components/CustomerReviews";
 import QuoteSection from "@/app/components/QuoteSection";
-import Text from "@/app/components/Text";
+import ContactForm from "@/app/components/ContactForm";
 import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-bg">
+    <main className="flex min-h-screen flex-col items-center bg-[url('/assets/bg.png')] bg-cover bg-center">
       <Header />
       <HeroSection />
-      <CareSection />
-      <Hands />
-      <ExperienceSection />
-      <InfoSection />
+      <AboutUs />
+      <Cards />
+      <HelpSection />
       <CustomerReviews />
       <QuoteSection />
-      <Text />
+      <ContactForm />
       <Footer />
     </main>
   );

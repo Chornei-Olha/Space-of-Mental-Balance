@@ -46,26 +46,27 @@ export default function CustomerReviews() {
   }, []);
 
   return (
-    <section className="w-full bg-[#EFF2F7] pt-[45px] pb-[45px] px-6 md:px-[70px] md:pt-[55px] md:pb-[55px] lg:px-[90px] lg:pt-[65px] lg:pb-[65px]">
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center">
+    <section className="container bg-[#EFF2F799]/60 w-full pt-[45px] pb-[45px] px-4 md:px-[50px] md:pt-[55px] md:pb-[55px] lg:px-[80px] lg:pt-[65px] lg:pb-[65px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+        {" "}
         {/* Левая колонка: Заголовок + кнопки */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left md:col-span-1">
           <h2
-            className={`text-[40px] leading-tight md:text-[50px] lg:text-[69.42px] font-normal text-black mb-5 ${spaceGrotesk.className}`}
+            className={`text-4xl leading-tight md:text-5xl lg:text-6xl font-normal text-black mb-5 ${spaceGrotesk.className}`}
           >
-            Unsere Kunden halten uns für die besten
+            Our Clients Consider Us The Best{" "}
           </h2>
           {/* Кнопки навигации — показываем только на планшете и десктопе */}
           {!isMobile && (
             <div className="flex gap-5 justify-center md:justify-start lg:justify-start">
               <button
-                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-2 border-[#1C5107] hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-1 border-black hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
                 id="prevBtn"
               >
                 ‹
               </button>
               <button
-                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-2 border-[#1C5107] hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-1 border-black hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
                 id="nextBtn"
               >
                 ›
@@ -73,12 +74,11 @@ export default function CustomerReviews() {
             </div>
           )}
         </div>
-
         {/* Средняя и правая колонки: Слайдер с изображениями */}
-        <div className="col-span-2 mt-[50px] md:mt-[0px] lg:mt-[0px]">
+        <div className="md:col-span-2 mt-[50px] md:mt-[0px] lg:mt-[0px]">
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={42}
+            spaceBetween={10}
             slidesPerView={slidesToShow}
             loop={true}
             autoplay={{ delay: 3000 }}
@@ -96,7 +96,7 @@ export default function CustomerReviews() {
                     alt={`Customer Review ${index + 1}`}
                     width={slideWidth}
                     height={410}
-                    className="rounded-lg object-cover max-w-[85%] "
+                    className="rounded-lg object-cover max-w-[80%] "
                   />
                 </div>
               </SwiperSlide>
