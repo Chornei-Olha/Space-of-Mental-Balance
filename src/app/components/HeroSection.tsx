@@ -17,7 +17,7 @@ export default function HeroSection() {
 
       {/* ⬆️ Контент поверх */}
       <div className="relative z-10 flex h-full items-center">
-        <div className="container">
+        <div className="container px-4">
           <div className="mt-32 md:mt-48 max-w-5xl">
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-medium leading-none">
               Welcome to creative peace of mind

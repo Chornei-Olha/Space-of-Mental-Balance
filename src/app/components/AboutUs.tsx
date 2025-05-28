@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section className="container py-10">
+    <section className="container px-4 py-10">
       <h2 className="text-lg font-medium mb-4 text-black">About Us</h2>
       <p className="text-sm md:text-base max-w-3xl mb-10 text-black">
         We are a team of practicing therapists with years of experience in

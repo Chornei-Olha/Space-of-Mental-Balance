@@ -108,7 +108,7 @@ import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="container bg-[url('/blue-texture.jpg')] bg-cover bg-center text-black px-6 py-12 md:py-16">
+    <footer className="container px-4 bg-[url('/blue-texture.jpg')] bg-cover bg-center text-black px-6 py-12 md:py-16">
       <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* INFO */}
         <div>
