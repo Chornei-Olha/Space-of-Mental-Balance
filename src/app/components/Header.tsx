@@ -2,18 +2,27 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="container px-4 absolute top-0 w-full z-50 py-9 flex justify-between items-center mx-auto">
-      <h1 className="text-yellow-300 text-xl font-semibold">
-        Peace of MindTherapy
-      </h1>
+    <header className="container px-4 absolute top-0 w-full z-50 py-9 flex justify-between items-center">
+      {/* Лого слева */}
+      <div className="relative w-[380px] h-[auto]">
+        <Image
+          src="/assets/logo.svg"
+          alt="Blue Circle"
+          width={380}
+          height={55}
+          className="object-contain"
+          priority
+        />
+      </div>
 
-      {/* Desktop navigation */}
-      <nav className="hidden md:flex space-x-3">
+      {/* Desktop navigation справа */}
+      <nav className="hidden md:flex space-x-3 items-center">
         <Link
           href="#about"
           className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
@@ -40,7 +49,7 @@ export default function Header() {
         </Link>
       </nav>
 
-      {/* Mobile burger icon */}
+      {/* Кнопка бургер для мобилок справа */}
       <button
         className="md:hidden text-white"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -49,7 +58,7 @@ export default function Header() {
         {menuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
 
-      {/* Mobile menu */}
+      {/* Мобильное меню */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-gradient-to-r from-blue-400 to-cyan-500 text-white flex flex-col items-center space-y-4 py-6 md:hidden">
           <Link

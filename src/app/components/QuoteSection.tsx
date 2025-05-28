@@ -32,7 +32,7 @@ export default function QuoteSection() {
 
   return (
     <section className="container px-4 w-full flex flex-col justify-center text-white">
-      <div className=" bg-[#3a376a] mx-auto rounded-[71px]">
+      <div className=" bg-[#D5C9B5] mx-auto rounded-[71px]">
         {/* Текстовая часть */}
         <div className="items-center font-normal leading-tight text-[20px] md:text-[30px] lg:text-[40px] px-10 pt-[70px]">
           <Image

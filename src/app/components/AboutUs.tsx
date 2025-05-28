@@ -19,7 +19,7 @@ export default function AboutUs() {
           History
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gradient-to-r from-blue-400 to-cyan-500">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px]">
         {/* Card 1 */}
         <div className="rounded-lg p-6 flex flex-row items-center text-white">
           <div className="bg-yellow-300 rounded-xl p-4 relative mb-4 w-full flex justify-center">

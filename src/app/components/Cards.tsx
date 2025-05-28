@@ -48,9 +48,12 @@ export default function EducationSection() {
                   height={400}
                   className="w-full max-h-[348px] object-cover"
                 />
+                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                  Individual therapeutic counseling{" "}
+                </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
                   <p>
                     In the sessions, we gently accompany you in exploring your
                     inner world, helping you to cope with anxiety, stress,
@@ -68,11 +71,17 @@ export default function EducationSection() {
                   </button>
                 </div>
 
-                <div className="bg-[#F6FF00] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
+                <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
                   {/* <p className="text-[16px] text-center">120 годин</p> */}
-                  <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
+                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
+                  <Image
+                    src="/assets/vector-for-card.svg"
+                    alt="Декор"
+                    fill
+                    className="absolute bottom-0 right-0 w-full h-auto object-cover z-0 pointer-events-none"
+                  />
                 </div>
               </div>
             </div>
@@ -87,9 +96,12 @@ export default function EducationSection() {
                   height={400}
                   className="w-full max-h-[348px] object-cover"
                 />
+                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                  Creative group activities{" "}
+                </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
                   <p>
                     In our author groups we combine art therapy techniques,
                     elements of body practices and group dialog. It is a safe
@@ -107,11 +119,17 @@ export default function EducationSection() {
                   </button>
                 </div>
 
-                <div className="bg-[#F6FF00] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
+                <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
                   {/* <p className="text-[16px] text-center">120 годин</p> */}
-                  <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
+                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
+                  <Image
+                    src="/assets/vector-for-card.svg"
+                    alt="Декор"
+                    fill
+                    className="absolute bottom-0 right-0 w-full h-auto object-cover z-0 pointer-events-none"
+                  />
                 </div>
               </div>
             </div>
@@ -126,9 +144,12 @@ export default function EducationSection() {
                   height={400}
                   className="w-full max-h-[348px] object-cover"
                 />
+                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                  Personalized art lessons
+                </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
                   <p>
                     We will help you unlock your creativity, express your
                     feelings through visual techniques and learn how to interact
@@ -146,11 +167,17 @@ export default function EducationSection() {
                   </button>
                 </div>
 
-                <div className="bg-[#F6FF00] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
+                <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
                   {/* <p className="text-[16px] text-center">120 годин</p> */}
-                  <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
+                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
+                  <Image
+                    src="/assets/vector-for-card.svg"
+                    alt="Декор"
+                    fill
+                    className="absolute bottom-0 right-0 w-full h-auto object-cover z-0 pointer-events-none"
+                  />
                 </div>
               </div>
             </div>
@@ -165,9 +192,12 @@ export default function EducationSection() {
                   height={400}
                   className="w-full max-h-[348px] object-cover"
                 />
+                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                  Consultations for organizations and groups{" "}
+                </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-[#F4F4F4] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
                   <p>
                     We design and deliver group programs for teams, educational
                     institutions, volunteer and social organizations. Topics can
@@ -185,11 +215,17 @@ export default function EducationSection() {
                   </button>
                 </div>
 
-                <div className="bg-[#F6FF00] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
+                <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
                   {/* <p className="text-[16px] text-center">120 годин</p> */}
-                  <button className="bg-black text-white py-2 px-3 rounded-full mt-4">
+                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
+                  <Image
+                    src="/assets/vector-for-card.svg"
+                    alt="Декор"
+                    fill
+                    className="absolute bottom-0 right-0 w-full h-auto object-cover z-0 pointer-events-none"
+                  />
                 </div>
               </div>
             </div>
