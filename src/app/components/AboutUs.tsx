@@ -11,7 +11,7 @@ export default function AboutUs() {
         back to yourself.
       </p>
 
-      <div className="flex justify-end my-6 space-x-4">
+      <div className="flex justify-start md:justify-end my-6 space-x-4">
         <button className="px-4 py-2 border text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
           About us
         </button>
@@ -21,8 +21,8 @@ export default function AboutUs() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px]">
         {/* Card 1 */}
-        <div className="rounded-lg p-6 flex flex-row items-center text-white">
-          <div className="bg-yellow-300 rounded-xl p-4 relative mb-4 w-full flex justify-center">
+        <div className="rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
+          <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
             <Image
               src="/therapist1.png"
               alt="Irina L Lelina"
@@ -30,14 +30,13 @@ export default function AboutUs() {
               height={150}
               className="object-cover z-10"
             />
-            {/* <div className="absolute -top-2 -left-2 w-10 h-10 bg-white rounded-full z-0" /> */}
           </div>
           <div className="flex flex-col">
             {" "}
             <h3 className="text-lg font-semibold mb-2 text-center">
               Irina L Lelina
             </h3>
-            <p className="text-sm text-center">
+            <p className="text-sm text-center color-[#243770]">
               Welcome to a space of mental balance and inner healing. We combine
               professional therapeutic practices with creative methods to help
               you restore harmony of body, mind and spirit.
@@ -46,7 +45,7 @@ export default function AboutUs() {
         </div>
 
         {/* Card 2 */}
-        <div className="rounded-lg p-6 flex flex-row items-center text-white">
+        <div className="rounded-lg p-6 flex flex-col-reverse md:flex-row items-center text-[#243770]">
           <div className="flex flex-col">
             {" "}
             <h3 className="text-lg font-semibold mb-2 text-center">
@@ -58,7 +57,7 @@ export default function AboutUs() {
               you restore harmony of body, mind and spirit.
             </p>
           </div>
-          <div className="bg-yellow-300 rounded-xl p-4 relative mb-4 w-full flex justify-center">
+          <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
             <Image
               src="/therapist2.png"
               alt="Irina L Lelina"
@@ -66,7 +65,6 @@ export default function AboutUs() {
               height={150}
               className="object-cover z-10"
             />
-            {/* <div className="absolute -top-2 -left-2 w-10 h-10 bg-white rounded-full z-0" /> */}
           </div>
         </div>
       </div>

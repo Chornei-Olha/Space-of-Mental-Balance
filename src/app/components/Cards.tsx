@@ -36,24 +36,23 @@ export default function EducationSection() {
       )}
 
       <section className="py-16">
-        <div className="container px-4 mx-auto text-[#09234B]">
+        <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 ">
             {/* КАРТОЧКА 1 */}
             <div>
-              <div className="relative rounded-2xl overflow-hidden ">
+              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text1.png"
                   alt="Картинка 1"
-                  width={600}
-                  height={400}
-                  className="w-full max-h-[348px] object-cover"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Individual therapeutic counseling{" "}
                 </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
                   <p>
                     In the sessions, we gently accompany you in exploring your
                     inner world, helping you to cope with anxiety, stress,
@@ -65,14 +64,13 @@ export default function EducationSection() {
                         "Дозволяє поєднати працю та навчання. Передбачає отримання базового обсягу компетенцій та навичок у стислий термін. Дає можливість спрямувати зусилля, час та фінанси в інтервенції із заздалегідь високою результативністю."
                       )
                     }
-                    className="text-blue-600 text-sm mt-2 cursor-pointer"
+                    className="text-white text-sm mt-2 cursor-pointer underline"
                   >
                     more ...
                   </button>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  {/* <p className="text-[16px] text-center">120 годин</p> */}
                   <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
@@ -88,20 +86,19 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 2 */}
             <div>
-              <div className="relative rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text2.png"
                   alt="Картинка 2"
-                  width={600}
-                  height={400}
-                  className="w-full max-h-[348px] object-cover"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Creative group activities{" "}
                 </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-[white] relative">
                   <p>
                     In our author groups we combine art therapy techniques,
                     elements of body practices and group dialog. It is a safe
@@ -113,14 +110,13 @@ export default function EducationSection() {
                         "Спрямована на фахівців, які впроваджують у роботу отримані знання за принципом «тут та зараз»."
                       )
                     }
-                    className="text-blue-600 text-sm mt-2 cursor-pointer"
+                    className="text-white text-sm mt-2 cursor-pointer underline"
                   >
                     more ...
                   </button>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  {/* <p className="text-[16px] text-center">120 годин</p> */}
                   <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
@@ -136,20 +132,19 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 3 */}
             <div>
-              <div className="relative rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text3.png"
                   alt="Картинка 3"
-                  width={600}
-                  height={400}
-                  className="w-full max-h-[348px] object-cover"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Personalized art lessons
                 </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
                   <p>
                     We will help you unlock your creativity, express your
                     feelings through visual techniques and learn how to interact
@@ -161,14 +156,13 @@ export default function EducationSection() {
                         "Уможливлює досягнення нового рівня у діяльності або започаткування кар'єри «з нуля»."
                       )
                     }
-                    className="text-blue-600 text-sm mt-2 cursor-pointer"
+                    className="text-white text-sm mt-2 cursor-pointer underline"
                   >
                     more ...
                   </button>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  {/* <p className="text-[16px] text-center">120 годин</p> */}
                   <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
@@ -184,20 +178,19 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 4 */}
             <div>
-              <div className="relative rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text4.png"
                   alt="Картинка 4"
-                  width={600}
-                  height={400}
-                  className="w-full max-h-[348px] object-cover"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full text-white text-left text-2xl py-4 px-4">
+                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Consultations for organizations and groups{" "}
                 </div>
               </div>
               <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
-                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-[16px] font-inter text-[#09234B] relative">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base  font-inter text-white relative">
                   <p>
                     We design and deliver group programs for teams, educational
                     institutions, volunteer and social organizations. Topics can
@@ -209,14 +202,13 @@ export default function EducationSection() {
                         "Уможливлює досягнення нового рівня у діяльності або започаткування кар'єри «з нуля»."
                       )
                     }
-                    className="text-blue-600 text-sm mt-2 cursor-pointer"
+                    className="text-white text-sm mt-2 cursor-pointer underline"
                   >
                     more ...
                   </button>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  {/* <p className="text-[16px] text-center">120 годин</p> */}
                   <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
                     120 годин{" "}
                   </button>
