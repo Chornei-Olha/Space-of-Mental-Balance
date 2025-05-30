@@ -40,23 +40,36 @@ export default function EducationSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 ">
             {/* КАРТОЧКА 1 */}
             <div>
-              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden bor">
                 <Image
                   src="/assets/Text1.png"
                   alt="Картинка 1"
                   fill
                   className="object-cover"
                 />
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
+                {/* Overlay */}
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
                 <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Individual therapeutic counseling{" "}
                 </div>
               </div>
-              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
                   <p>
                     In the sessions, we gently accompany you in exploring your
                     inner world, helping you to cope with anxiety, stress,
-                    crises and emotional difficulties ...
+                    crises and emotional ...
                   </p>
                   <button
                     onClick={() =>
@@ -86,18 +99,31 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 2 */}
             <div>
-              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text2.png"
                   alt="Картинка 2"
                   fill
                   className="object-cover"
                 />
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
+                {/* Overlay */}
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
                 <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Creative group activities{" "}
                 </div>
               </div>
-              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-[white] relative">
                   <p>
                     In our author groups we combine art therapy techniques,
@@ -132,18 +158,31 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 3 */}
             <div>
-              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text3.png"
                   alt="Картинка 3"
                   fill
                   className="object-cover"
                 />
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
+                {/* Overlay */}
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
                 <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Personalized art lessons
                 </div>
               </div>
-              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
                   <p>
                     We will help you unlock your creativity, express your
@@ -178,18 +217,31 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 4 */}
             <div>
-              <div className="relative h-[200px] sm:h-[300px] rounded-2xl overflow-hidden">
+              <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden">
                 <Image
                   src="/assets/Text4.png"
                   alt="Картинка 4"
                   fill
                   className="object-cover"
                 />
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
+                {/* Overlay */}
+                <div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.25)",
+                  }}
+                ></div>
                 <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
                   Consultations for organizations and groups{" "}
                 </div>
               </div>
-              <div className="flex gap-4 sm:gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base  font-inter text-white relative">
                   <p>
                     We design and deliver group programs for teams, educational

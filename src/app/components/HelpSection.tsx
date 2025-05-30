@@ -10,7 +10,7 @@ export default function HelpSection() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#2D2D2D]">
             Do you need help?
           </h2>
-          <p className="text-[#2D2D2D] text-base md:text-lg md:w-[56%]">
+          <p className="text-[#2D2D2D] text-base md:text-sm md:w-[70%]">
             We will provide detailed information about our services, types of
             work, and top projects. We will calculate the cost and prepare a
             commercial proposal.
