@@ -34,7 +34,7 @@ export default function QuoteSection() {
     <section className="container px-4 w-full flex flex-col justify-center text-white">
       <div className=" bg-[#D5C9B5] mx-auto rounded-[71px]">
         {/* Текстовая часть */}
-        <div className="items-center font-normal leading-tight text-[20px] md:text-[30px] lg:text-[40px] px-10 pt-[70px]">
+        <div className="items-center font-normal leading-tight text-2xl md:text-3xl lg:text-4xl px-10 pt-[70px]">
           <Image
             src={quotes[currentIndex].icon}
             alt="Quote Icon"
@@ -43,28 +43,29 @@ export default function QuoteSection() {
             className="mb-4 w-[20px] h-[20px] md:w-[35px] md:h-[35px] lg:w-[50px] lg:h-[50px]"
           />
           <p>{quotes[currentIndex].text}</p>
-          <p className="mt-4 text-[14px] md:text-[15px] lg:text-[16px]">
+          <p className="mt-4 text-sm md:text-base lg:text-base">
             {quotes[currentIndex].author}
           </p>
         </div>
 
         {/* Контейнер для кнопок */}
-        <div className="flex flex-col md:justify-between lg:justify-between md:flex-row px-10 pb-[30px] pt-[30px] md:pt-[50px] w-full max-w-full">
-          <div className="flex gap-5 ">
-            {/* Стрелки влево и вправо */}
-            <button
-              className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl w-[30px] h-[30px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
-              onClick={prevQuote}
-            >
-              ‹
-            </button>
-            <button
-              className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl w-[30px] h-[30px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
-              onClick={nextQuote}
-            >
-              ›
-            </button>
-          </div>
+        {/* <div className="flex flex-col md:justify-between lg:justify-between md:flex-row px-10 pb-[30px] pt-[30px] md:pt-[50px] w-full max-w-full"> */}
+
+        <div className="flex gap-5 justify-center md:justify-start lg:justify-start px-10 pb-[30px] pt-[30px] md:pt-[50px] w-full max-w-full">
+          <button
+            className="flex items-center justify-center rounded-full bg-[#CE946B] text-[#EFF2F7] text-2xl hover:bg-white hover:text-[#CE946B] hover:border hover:border-[#CE946B]
+                    w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+            onClick={prevQuote}
+          >
+            ←
+          </button>
+          <button
+            className="flex items-center justify-center rounded-full bg-white text-black text-2xl hover:bg-white hover:text-[#CE946B] hover:border hover:border-[#CE946B]
+                    w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+            onClick={nextQuote}
+          >
+            →
+          </button>
         </div>
       </div>
     </section>

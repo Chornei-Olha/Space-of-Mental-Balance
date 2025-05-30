@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HelpSection() {
   return (
-    <section className="container px-4 relative py-10 flex justify-center">
+    <section className="container px-4 relative py-10 flex justify-center sm:mb-[100px] md:mb-[159px]">
       <div className="relative z-10 flex flex-col md:flex-row w-full max-w-7xl overflow-hidden rounded-2xl bg-white shadow-md">
         {/* Текстовая часть */}
         <div className="flex-1 p-6 md:p-8">
@@ -18,9 +18,9 @@ export default function HelpSection() {
         </div>
 
         {/* Правая часть с кнопкой и фоном */}
-        <div className="relative flex items-center justify-right md:justify-center min-w-[300px] px-10 text-white">
+        <div className="relative flex items-center justify-center md:justify-center min-w-[300px] px-0 md:px-10 text-white">
           {/* Синее круговое изображение, обрезанное контейнером */}
-          <div className="absolute w-full md:w-[600px] h-[100px] md:h-[600px]">
+          <div className="absolute display:none md:w-[600px] md:h-[600px]">
             <Image
               src="/assets/Ellipse.png"
               alt="Blue Circle"
@@ -31,7 +31,7 @@ export default function HelpSection() {
           </div>
 
           {/* Кнопка поверх круга */}
-          <button className="relative z-10 text-white pr-[20px] py-10 md:py-3 rounded-full font-medium hover:brightness-110 transition">
+          <button className="relative z-10 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] bg-clip-text text-transparent md:text-white md:pr-[20px] py-5 md:py-3 rounded-full text-xl font-medium hover:brightness-110 transition">
             Get consultation →
           </button>
         </div>

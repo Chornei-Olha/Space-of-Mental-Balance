@@ -46,62 +46,88 @@ export default function CustomerReviews() {
   }, []);
 
   return (
-    <section className="container bg-[#EFF2F799]/60 w-full pt-[45px] pb-[45px] px-4 md:px-[50px] md:pt-[55px] md:pb-[55px] lg:px-[80px] lg:pt-[65px] lg:pb-[65px] ">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-        {" "}
-        {/* Левая колонка: Заголовок + кнопки */}
-        <div className="text-center md:text-left md:col-span-1">
-          <h2
-            className={`text-4xl leading-tight md:text-5xl lg:text-6xl font-normal text-black mb-5 ${spaceGrotesk.className}`}
-          >
-            Our Clients Consider Us The Best{" "}
-          </h2>
-          {/* Кнопки навигации — показываем только на планшете и десктопе */}
-          {!isMobile && (
-            <div className="flex gap-5 justify-center md:justify-start lg:justify-start">
-              <button
-                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-1 border-black hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
-                id="prevBtn"
-              >
-                ‹
-              </button>
-              <button
-                className="flex items-center justify-center rounded-full bg-white text-[#1C5107] text-2xl border-1 border-black hover:bg-[#1C5107] hover:text-white w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
-                id="nextBtn"
-              >
-                ›
-              </button>
-            </div>
-          )}
-        </div>
-        {/* Средняя и правая колонки: Слайдер с изображениями */}
-        <div className="md:col-span-2 mt-[50px] md:mt-[0px] lg:mt-[0px]">
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            spaceBetween={10}
-            slidesPerView={slidesToShow}
-            loop={true}
-            autoplay={{ delay: 3000 }}
-            grabCursor={true}
-            navigation={
-              !isMobile ? { prevEl: "#prevBtn", nextEl: "#nextBtn" } : false
-            } // Кнопки навигации только на десктопе
-            className="flex justify-center overflow-hidden"
-          >
-            {images.map((src, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex-shrink-0">
-                  <Image
-                    src={src}
-                    alt={`Customer Review ${index + 1}`}
-                    width={slideWidth}
-                    height={410}
-                    className="rounded-lg object-cover max-w-[80%] "
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+    <section className="relative bg-[#EFF2F799]/60 w-full pt-[45px] mt-[20px] md:mt-[100px] mb-[15px] pb-[45px]">
+      {/* Левый декор */}
+      <div className="absolute top-[-80px] md:top-0 left-0 z-0">
+        <Image
+          src="/assets/leave_left.png"
+          alt="Left Leaf Decoration"
+          width={100}
+          height={300}
+          className="object-contain"
+        />
+      </div>
+
+      {/* Правый декор */}
+      <div className="absolute top-[-80px] hidden md:block right-0 z-0">
+        <Image
+          src="/assets/leave_right.png"
+          alt="Right Leaf Decoration"
+          width={500}
+          height={300}
+          className="object-contain"
+        />
+      </div>
+
+      {/* Контейнер для заголовка, стрелок и слайдера */}
+      <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-10 items-start">
+          {/* Левая колонка: Заголовок и кнопки */}
+          <div className="text-center md:text-left md:col-span-1">
+            <h2
+              className={`leading-tight text-4xl md:text-5xl lg:text-7xl font-normal text-black mb-5 ${spaceGrotesk.className}`}
+            >
+              Our Clients Consider Us The Best{" "}
+            </h2>
+            {!isMobile && (
+              <div className="flex gap-5 justify-center md:justify-start lg:justify-start">
+                <button
+                  className="flex items-center justify-center rounded-full bg-[#07512A]/26 text-[#EFF2F7] text-2xl hover:bg-[#EFF2F7] hover:text-[#07512A] hover:border hover:border-[#07512A]
+                    w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+                  id="prevBtn"
+                >
+                  ←
+                </button>
+                <button
+                  className="flex items-center justify-center rounded-full bg-[#F0D9D4] text-[#EFF2F7] text-2xl hover:bg-[#EFF2F7] hover:text-[#F0D9D4] hover:border hover:border-[#F0D9D4]
+                    w-[36px] h-[36px] md:w-[36px] md:h-[36px] lg:w-[46px] lg:h-[46px]"
+                  id="nextBtn"
+                >
+                  →
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Средняя и правая колонки: Слайдер */}
+          <div className="md:col-span-2 mt-[50px] md:mt-0 flex justify-center">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={10}
+              slidesPerView={slidesToShow}
+              loop={true}
+              autoplay={{ delay: 3000 }}
+              grabCursor={true}
+              navigation={
+                !isMobile ? { prevEl: "#prevBtn", nextEl: "#nextBtn" } : false
+              }
+              className="flex justify-center overflow-hidden"
+            >
+              {images.map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={src}
+                      alt={`Customer Review ${index + 1}`}
+                      width={slideWidth}
+                      height={410}
+                      className="rounded-lg object-cover mx-auto max-w-[80%]"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
