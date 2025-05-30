@@ -43,31 +43,27 @@ export default function ContactForm() {
 
     setStatus("Надсилаємо ваше повідомлення...");
 
-    try {
-      const result = await emailjs.send(
-        "service_41u5nb3",
-        "template_1jp9jup",
-        {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        },
-        "rvxuQ4n9szGCWTyHr"
-      );
+    // try {
+    //   const result = await emailjs.send(
+    //     "service_41u5nb3",
+    //     "template_1jp9jup",
+    //     {
+    //       name: formData.name,
+    //     },
+    //     "rvxuQ4n9szGCWTyHr"
+    //   );
 
-      console.log("SUCCESS!", result.status, result.text);
-      setStatus("Повідомлення надіслано!");
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-        consentInfo: false,
-        consentPolicy: false,
-      });
-    } catch (error) {
-      console.error("FAILED...", error);
-      setStatus("Помилка при надсиланні. Спробуйте ще раз.");
-    }
+    //   console.log("SUCCESS!", result.status, result.text);
+    //   setStatus("Повідомлення надіслано!");
+    //   setFormData({
+    //     name: "",
+    //     consentInfo: false,
+    //     consentPolicy: false,
+    //   });
+    // } catch (error) {
+    //   console.error("FAILED...", error);
+    //   setStatus("Помилка при надсиланні. Спробуйте ще раз.");
+    // }
   };
 
   return (
@@ -77,7 +73,7 @@ export default function ContactForm() {
         <br />
         or suggestions?{" "}
       </h1>
-      <div className="relative z-10 w-full sm:max-w-[1074px] mx-auto px-4">
+      <div className="relative bg-white shadow-md rounded-xl z-10 w-full sm:max-w-[480px] sm:h-[601px] mr-auto px-4">
         <h3 className="text-2xl sm:text-[30px] font-medium font-dm text-center mb-3 text-[#222222]">
           Leave a request{" "}
         </h3>
@@ -86,7 +82,7 @@ export default function ContactForm() {
         </p>
         <form
           onSubmit={handleSubmit}
-          className="bg-white shadow-md rounded-xl p-6 grid grid-cols-1 sm:grid-cols-2 gap-6"
+          className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6"
         >
           <div>
             <label className="block text-[14px] sm:text-[16px] font-bold font-inter mb-2 text-[#222222]">
@@ -98,21 +94,6 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Please enter your name"
-              required
-              className="w-full border text-[14px] sm:text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
-            />
-          </div>
-
-          <div>
-            <label className="block text-[14px] sm:text-[16px] font-bold font-inter mb-2 text-[#222222]">
-              Email
-            </label>
-            <input
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email address..."
               required
               className="w-full border text-[14px] sm:text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
             />
@@ -131,17 +112,23 @@ export default function ContactForm() {
             </label>
           </div>
 
-          <div className="sm:col-span-2 text-right">
+          <div>
             <button
               type="submit"
               disabled={!isValid}
-              className={`px-[40px] py-[10px] font-bold font-inter text-[14px] sm:text-[16px] rounded-3xl ${
+              className={`px-[40px] ${
                 isValid
                   ? "bg-black text-white hover:bg-gray-800"
                   : "bg-gray-400 text-white cursor-not-allowed"
               }`}
             >
-              Book now
+              <Image
+                src="/assets/button.png"
+                alt="book now"
+                width={200}
+                height={150}
+                className="absolute bottom-0 right-0 w-[334px] h-auto object-contain pointer-events-none"
+              />{" "}
             </button>
           </div>
 
