@@ -32,7 +32,15 @@ export default function QuoteSection() {
 
   return (
     <section className="container px-4 w-full flex flex-col justify-center text-white">
-      <div className=" bg-[#D5C9B5] mx-auto rounded-[71px]">
+      <div className="relative bg-[#D5C9B5] mx-auto rounded-[71px] overflow-hidden">
+        {/* Нижний правый угол: картинка */}
+        <Image
+          src="/assets/line_white.png"
+          alt="Decorative Line"
+          width={200}
+          height={150}
+          className="absolute bottom-0 right-0 w-[200px] h-auto md:w-[400px] md:h-auto object-contain pointer-events-none"
+        />
         {/* Текстовая часть */}
         <div className="items-center font-normal leading-tight text-2xl md:text-3xl lg:text-4xl px-10 pt-[70px]">
           <Image
@@ -49,8 +57,6 @@ export default function QuoteSection() {
         </div>
 
         {/* Контейнер для кнопок */}
-        {/* <div className="flex flex-col md:justify-between lg:justify-between md:flex-row px-10 pb-[30px] pt-[30px] md:pt-[50px] w-full max-w-full"> */}
-
         <div className="flex gap-5 justify-center md:justify-start lg:justify-start px-10 pb-[30px] pt-[30px] md:pt-[50px] w-full max-w-full">
           <button
             className="flex items-center justify-center rounded-full bg-[#CE946B] text-[#EFF2F7] text-2xl hover:bg-white hover:text-[#CE946B] hover:border hover:border-[#CE946B]

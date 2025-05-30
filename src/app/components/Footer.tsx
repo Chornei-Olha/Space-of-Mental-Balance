@@ -108,8 +108,8 @@ import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="container px-4 bg-[url('/blue-texture.jpg')] bg-cover bg-center text-black px-6 py-12 md:py-16">
-      <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="container px-4 text-black py-12 md:py-16">
+      <div className="md:justify-between mx-auto flex flex-col md:flex-row gap-8">
         {/* INFO */}
         <div>
           <h4 className="uppercase font-semibold text-sm tracking-widest mb-4">
@@ -159,14 +159,14 @@ export default function Footer() {
         </div>
 
         {/* CONTACTS */}
-        <div className="text-right space-y-2">
+        <div className="text-left md:text-right space-y-2">
           <p className="text-sm font-medium">+1 981 981-23-19</p>
           <p className="text-sm text-gray-700">dataverse@gmail.com</p>
         </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center mt-12 border-t border-black pt-6 gap-4">
+      <div className="flex flex-row justify-between mt-12 border-black pt-6 gap-4">
         <p className="text-sm text-gray-700">© 2025 — Copyright</p>
 
         <button
@@ -175,14 +175,6 @@ export default function Footer() {
         >
           <ArrowUp size={20} />
         </button>
-      </div>
-
-      {/* Branding */}
-      <div className="mt-8">
-        <h1 className="text-center text-4xl md:text-6xl font-bold tracking-tight">
-          <span className="text-white">PEACE OF MIND</span>
-          <span className="text-white">THERAPY</span>
-        </h1>
       </div>
     </footer>
   );

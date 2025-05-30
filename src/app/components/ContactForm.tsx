@@ -2,6 +2,7 @@
 
 import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -70,24 +71,19 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="w-90% relative py-12 overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-      >
-        <source src="/assets/form.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section className="container relative py-12 overflow-hidden mt-[70px] sm:mt-[100px] md:mt-[183px]">
+      <h1 className="text-4xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222]">
+        Do you have any questions
+        <br />
+        or suggestions?{" "}
+      </h1>
       <div className="relative z-10 w-full sm:max-w-[1074px] mx-auto px-4">
-        <h2 className="text-[40px] sm:text-[56px] font-medium font-dm text-center mb-8 text-[#222222]">
+        <h3 className="text-2xl sm:text-[30px] font-medium font-dm text-center mb-3 text-[#222222]">
           Leave a request{" "}
-        </h2>
-        <h3 className="sm:text-base  md:text-lg font-medium font-dm text-center mb-8 text-[#222222]">
-          Managers will contact you and advise on all issues{" "}
         </h3>
+        <p className="text-base sm:text-lg font-medium font-dm text-center mb-3 text-[#222222]">
+          Managers will contact you and advise on all issues{" "}
+        </p>
         <form
           onSubmit={handleSubmit}
           className="bg-white shadow-md rounded-xl p-6 grid grid-cols-1 sm:grid-cols-2 gap-6"
@@ -133,15 +129,6 @@ export default function ContactForm() {
               I agree to the processing of my personal data in accordance with
               the conditions{" "}
             </label>
-            {/* <label className="flex items-start gap-2 text-[#222222]">
-              <input
-                type="checkbox"
-                name="consentPolicy"
-                checked={formData.consentPolicy}
-                onChange={handleChange}
-              />
-              I agree to the privacy policy{" "}
-            </label> */}
           </div>
 
           <div className="sm:col-span-2 text-right">
@@ -165,6 +152,13 @@ export default function ContactForm() {
           )}
         </form>
       </div>
+      <Image
+        src="/assets/bottom.png"
+        alt="bottom Line"
+        width={200}
+        height={150}
+        className="absolute bottom-0 right-0 w-full h-auto object-contain pointer-events-none"
+      />
     </section>
   );
 }
