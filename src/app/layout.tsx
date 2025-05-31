@@ -6,12 +6,12 @@ import Head from "next/head";
 // Импортируем шрифты
 const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
 
-const SITE_NAME = "A space of mental balance";
+const SITE_NAME = "Peace of MindTherapy";
 const SITE_DESCRIPTION =
   "We combine professional therapeutic practices with creative methods to help you restore harmony of body, mind and spirit.";
 
 export const metadata: Metadata = {
-  title: "A space of mental balance",
+  title: "Peace of MindTherapy",
   description:
     "We combine professional therapeutic practices with creative methods to help you restore harmony of body, mind and spirit.",
 };
