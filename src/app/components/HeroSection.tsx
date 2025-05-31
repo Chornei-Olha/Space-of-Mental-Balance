@@ -23,7 +23,10 @@ export default function HeroSection() {
           </h1>
 
           <div className="mt-[130px] sm:mt-[180px] text-left">
-            <button className="flex items-center gap-2 cursor-pointer">
+            <a
+              href="#contact"
+              className="flex items-center gap-2 cursor-pointer"
+            >
               <Image
                 src="/assets/button.svg"
                 alt="book now"
@@ -31,7 +34,7 @@ export default function HeroSection() {
                 height={150}
                 className="object-cover z-10"
               />
-            </button>
+            </a>
           </div>
 
           {/* Контентная часть */}
