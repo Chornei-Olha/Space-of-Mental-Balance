@@ -1,11 +1,11 @@
 "use client";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaFacebook } from "react-icons/fa";
 import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="container px-4 text-black py-12 md:py-16">
-      <div className="md:justify-between mx-auto flex flex-col md:flex-row gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* INFO */}
         <div>
           <h4 className="uppercase font-semibold text-sm tracking-widest mb-4">
@@ -33,23 +33,71 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <div className="flex flex-row gap-10 mt-10">
-            {" "}
-            {/* SOCIAL - Instagram */}
-            <div>
-              <div className="border-b border-black mb-4 w-full" />
-              <div className="flex items-center gap-2 text-sm text-gray-700">
+        </div>
+
+        {/* Elena & Irina's Contacts (центральная колонка) */}
+        <div className="text-center">
+          {/* Елена */}
+          <div className="mt-6 md:mt-0">
+            <div className="mb-4 w-full" />
+            <p className="uppercase font-semibold text-sm tracking-widest mb-2">
+              Olena’s Contacts
+            </p>
+            <div className="flex justify-center gap-6">
+              <a
+                href="https://www.instagram.com/asanka_91?igsh=MThzd3IxaGI4cnVrbw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black transition"
+              >
                 <FaInstagram className="text-xl" />
-                Instagram
-              </div>
+              </a>
+              <a
+                href="mailto:Olena1sanko@gmail.com"
+                className="text-gray-700 hover:text-black transition"
+              >
+                <FaEnvelope className="text-xl" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/15MGMdUX8U/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black transition"
+              >
+                <FaFacebook className="text-xl" />
+              </a>
             </div>
-            {/* SOCIAL - Whatsapp */}
-            <div>
-              <div className="border-b border-black mb-4 w-full" />
-              <div className="flex items-center gap-2 text-sm text-gray-700">
-                <FaWhatsapp className="text-xl" />
-                Whatsapp
-              </div>
+          </div>
+
+          {/* Ирина */}
+          <div className="mt-10">
+            <div className="border-b border-black mb-4 w-full" />
+            <p className="uppercase font-semibold text-sm tracking-widest mb-2">
+              Irina’s Contacts
+            </p>
+            <div className="flex justify-center gap-6">
+              <a
+                href="https://www.instagram.com/asanka_91?igsh=MThzd3IxaGI4cnVrbw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black transition"
+              >
+                <FaInstagram className="text-xl" />
+              </a>
+              <a
+                href="mailto:Olena1sanko@gmail.com"
+                className="text-gray-700 hover:text-black transition"
+              >
+                <FaEnvelope className="text-xl" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/15MGMdUX8U/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-black transition"
+              >
+                <FaFacebook className="text-xl" />
+              </a>
             </div>
           </div>
         </div>
@@ -57,7 +105,9 @@ export default function Footer() {
         {/* CONTACTS */}
         <div className="text-left md:text-right space-y-2">
           <p className="text-sm font-medium">+1 981 981-23-19</p>
-          <p className="text-sm text-gray-700">dataverse@gmail.com</p>
+          <p className="text-sm text-gray-700">
+            info@peaceofmind-therapy.co.uk
+          </p>
         </div>
       </div>
 

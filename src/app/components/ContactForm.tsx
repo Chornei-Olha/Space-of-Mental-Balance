@@ -48,35 +48,90 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="container relative py-12 overflow-hidden mt-[70px] sm:mt-[100px] md:mt-[183px] text-center"
+      className="relative py-10 w-full mt-[70px] sm:mt-[100px] md:mt-[183px] text-center overflow-hidden"
     >
-      <h1 className="text-3xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222]">
+      {/* Flowers */}
+      <div className="absolute bottom-0 left-[-10px] sm:left-0 z-20 h-[auto] w-[150px] sm:w-[200px] md:w-[272px]">
+        <Image
+          src="/assets/flowers.png"
+          alt="Flowers"
+          width={300}
+          height={300}
+          className="absolute bottom-0 left-0 w-auto h-auto z-0"
+        />
+      </div>
+
+      {/* Girl */}
+      <div className="absolute bottom-0 right-[-60px] sm:right-[200px] z-60 sm:z-0 h-[auto] w-[250px] sm:w-[300px] md:w-[614px]">
+        <Image
+          src="/assets/girl.png"
+          alt="Girl"
+          width={250}
+          height={250}
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-auto h-auto z-0"
+        />
+      </div>
+
+      {/* Cup */}
+      <div className="absolute top-[-70px] md:top-[-120px] right-0 z-0 h-[auto] w-[100px] sm:w-[150px] md:w-[200px]">
+        <Image
+          src="/assets/cup.png"
+          alt="Cup"
+          width={200}
+          height={200}
+          className="absolute top-0 right-0 w-auto h-auto z-0"
+        />
+      </div>
+
+      {/* Ribbon2 */}
+      <div className="absolute top-[150px] left-0 sm:left-[145px] z-51 h-[auto] w-[100px] sm:w-[120px] md:w-[200px]">
+        <Image
+          src="/assets/ribbon2.png"
+          alt="ribbon"
+          width={200}
+          height={200}
+          className="absolute top-0 right-0 w-auto h-auto z-0"
+        />
+      </div>
+
+      {/* Flower2 */}
+      <div className="absolute top-[130px] left-[60%] md:left-[35%] z-55 h-[auto] w-[40px] sm:w-[45px] md:w-[52px]">
+        <Image
+          src="/assets/flower2.png"
+          alt="flower"
+          width={200}
+          height={200}
+          className="absolute top-0 right-0 w-auto h-auto z-0"
+        />
+      </div>
+
+      {/* Flower2.2 */}
+      <div className="absolute top-[200px] left-[83%] md:left-[40%] z-55 h-[auto] w-[70px] sm:w-[80px] md:w-[97px]">
+        <Image
+          src="/assets/flower2.2.png"
+          alt="flower"
+          width={200}
+          height={200}
+          className="absolute top-0 right-0 w-auto h-auto z-0"
+        />
+      </div>
+
+      {/* Заголовок */}
+      <h1 className="text-3xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222] relative z-10">
         Do you have any questions
         <br />
         or suggestions?
       </h1>
 
-      <div className="w-[80%] sm:max-w-[480px] shadow-md rounded-xl z-10 px-4 py-10 border-7 border-white/50 mb-[50px] mx-auto sm:ml-[10%]">
+      <div className="z-[50] w-[80%] sm:max-w-[480px] shadow-md rounded-xl px-4 py-10 border-7 border-white/50 mb-[150px] sm:mb-[50px] mx-auto sm:ml-[16%] bg-white relative">
         <h3 className="text-2xl sm:text-[30px] font-medium font-dm text-center mb-3 text-[#222222]">
           Leave a request
         </h3>
         <p className="text-base sm:text-lg font-medium font-dm text-center mb-3 text-[#222222]">
           Managers will contact you and advise on all issues
         </p>
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4">
-          {/* <div>
-            <input
-              name="name"
-              type="text"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Please enter your name"
-              required
-              className="w-full border text-[14px] sm:text-[16px] font-regular font-inter border-gray-300 rounded px-4 py-2"
-            />
-          </div> */}
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 ">
           <div className="flex items-center bg-white rounded-lg shadow-md px-4 py-2">
-            {/* Иконка телефона */}
             <div className="flex items-center justify-center bg-[#E7C2A3] rounded-full w-10 h-10 mr-4">
               <Image
                 src="/assets/phone.svg"
@@ -86,8 +141,6 @@ export default function ContactForm() {
                 className="w-6 h-6"
               />
             </div>
-
-            {/* Поле для ввода телефона */}
             <input
               type="tel"
               name="phone"
@@ -104,7 +157,7 @@ export default function ContactForm() {
                 width={200}
                 height={150}
                 className="w-[334px] h-auto object-contain cursor-pointer"
-              />{" "}
+              />
             </button>
           </div>
 
@@ -135,7 +188,7 @@ export default function ContactForm() {
         alt="bottom Line"
         width={200}
         height={150}
-        className="absolute bottom-0 w-full h-auto object-contain pointer-events-none"
+        className="absolute bottom-0 w-full h-auto object-contain pointer-events-none z-0"
       />
     </section>
   );

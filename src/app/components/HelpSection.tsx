@@ -2,31 +2,34 @@ import Image from "next/image";
 
 export default function HelpSection() {
   return (
-    <section id="groups" className="relative py-10 sm:mb-[100px] md:mb-[159px]">
+    <section
+      id="groups"
+      className="relative py-10 w-full sm:mb-[100px] md:mb-[159px]"
+    >
       {/* Картинка слева внизу вне контейнера */}
-      <div className="absolute bottom-0 left-0 z-0 w-[120px] h-[120px] md:w-[150px] md:h-[150px]">
+      <div className="absolute top-[-150px] sm:top-0 left-0 z-0 w-[120px] h-[auto] md:w-[272px]">
         <Image
           src="/assets/key.png"
           alt="Key Decoration"
-          fill
+          width={272}
+          height={300}
           className="object-contain"
-          priority
         />
       </div>
 
       {/* Картинка справа вверху вне контейнера */}
-      <div className="absolute top-0 right-0 z-0 w-[120px] h-[120px] md:w-[150px] md:h-[150px]">
+      <div className="absolute top-[-50px] sm:top-0 right-0 z-20 sm:z-0 w-[120px] h-[auto] md:w-[252px]">
         <Image
           src="/assets/ribbon.png"
           alt="Ribbon Decoration"
-          fill
+          width={500}
+          height={300}
           className="object-contain"
-          priority
         />
       </div>
 
       {/* Контейнер с контентом */}
-      <div className="container relative z-10 px-4 flex justify-center">
+      <div className="container px-4 relative z-10 flex justify-center mx-auto">
         <div className="relative flex flex-col md:flex-row w-full max-w-7xl overflow-hidden rounded-2xl bg-white shadow-md p-6 md:p-8">
           {/* Текстовая часть */}
           <div className="flex-1 pr-0 md:pr-8">

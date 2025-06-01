@@ -59,7 +59,7 @@ export default function CustomerReviews() {
       </div>
 
       {/* Правый декор */}
-      <div className="absolute top-[-80px] hidden md:block right-0 z-0">
+      <div className="absolute top-[200px] md:top-[-80px] right-0 z-0">
         <Image
           src="/assets/leave_right.png"
           alt="Right Leaf Decoration"
@@ -70,12 +70,12 @@ export default function CustomerReviews() {
       </div>
 
       {/* Контейнер для заголовка, стрелок и слайдера */}
-      <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-12">
+      <div className="container px-4 relative z-10 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-10 items-start">
           {/* Левая колонка: Заголовок и кнопки */}
           <div className="text-center md:text-left md:col-span-1">
             <h2
-              className={`leading-tight text-4xl md:text-5xl lg:text-7xl font-normal text-black mb-5 ${spaceGrotesk.className}`}
+              className={`leading-tight text-3xl md:text-5xl lg:text-7xl font-normal text-black mb-5 ${spaceGrotesk.className}`}
             >
               Our Clients Consider Us The Best{" "}
             </h2>

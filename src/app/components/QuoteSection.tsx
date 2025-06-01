@@ -7,12 +7,12 @@ export default function QuoteSection() {
     {
       icon: "/assets/quote.png",
       text: "Real healing does not happen alone, but in relationships - where you are truly seen, where your pain is not frightening, but accepted with respect and care. In a safe space where you can be yourself, step by step, the contact with yourself returns, an inner resource emerges and the silence within comes. We are there to accompany you on this journey - with care, with attention, without rushing.”",
-      author: "— María",
+      author: "— Irina",
     },
     {
       icon: "/assets/quote.png",
-      text: "Real healing does not happen alone, but in relationships - where you are truly seen, where your pain is not frightening, but accepted with respect and care. In a safe space where you can be yourself, step by step, the contact with yourself returns, an inner resource emerges and the silence within comes. We are there to accompany you on this journey - with care, with attention, without rushing.”",
-      author: "— María",
+      text: "True balance comes when you allow yourself to pause, to create, to be. Art therapy is more than colors on paper—it’s a space where your emotions unfold safely, your mind finds calm, and your spirit gently reconnects with its essence. In this gentle process, stress softens, confidence grows, and your sense of self blossoms. We are here to support you—patiently, attentively, with care.”",
+      author: "— Olena",
     },
   ];
 
