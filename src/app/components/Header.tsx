@@ -10,16 +10,18 @@ export default function Header() {
   return (
     <header className="container px-4 absolute top-0 w-full z-50 py-3 flex justify-between items-center">
       {/* Лого слева */}
-      <div className="relative w-[250px] md:w-[380px] h-[auto]">
-        <Image
-          src="/assets/logo.svg"
-          alt="Blue Circle"
-          width={350}
-          height={55}
-          className="object-contain"
-          priority
-        />
-      </div>
+      <Link href="/" passHref>
+        <div className="relative w-[250px] md:w-[380px] h-[auto] cursor-pointer">
+          <Image
+            src="/assets/logo.svg"
+            alt="Blue Circle"
+            width={350}
+            height={55}
+            className="object-contain"
+            priority
+          />
+        </div>
+      </Link>
 
       {/* Desktop navigation справа */}
       <nav className="hidden lg:flex space-x-3 items-center">

@@ -20,8 +20,20 @@ export default function EducationSection() {
     <div className="container w-full">
       {/* МОДАЛКА */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-white/90 z-50 flex items-center justify-center">
-          <div className="bg-white border border-[#09234B] rounded-xl p-6 max-w-lg w-[90%] relative">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          style={{
+            background: `linear-gradient(
+          180deg,
+          #D5C9B5 0%,
+          #EAE4DA 19%,
+          #F1EEE7 68%,
+          #F5F1ED 75%,
+          #FFFFFF 100%
+        )`,
+          }}
+        >
+          <div className="bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px] border border-[#09234B] p-6 max-w-lg w-[90%] relative">
             <button
               onClick={closeModal}
               className="absolute top-2 right-4 text-xl text-black"
@@ -74,7 +86,7 @@ export default function EducationSection() {
                   <button
                     onClick={() =>
                       openModal(
-                        "Дозволяє поєднати працю та навчання. Передбачає отримання базового обсягу компетенцій та навичок у стислий термін. Дає можливість спрямувати зусилля, час та фінанси в інтервенції із заздалегідь високою результативністю."
+                        "In these sessions, we gently accompany you as you explore your inner world. We help you to navigate and process anxiety, stress, crises, and emotional challenges. Together, we will work to develop self-awareness, build coping strategies, and foster personal growth. Through a warm, compassionate, and non-judgmental approach, we aim to support you in finding clarity, healing, and a renewed sense of strength and resilience."
                       )
                     }
                     className="text-white text-sm mt-2 cursor-pointer underline"
@@ -133,7 +145,7 @@ export default function EducationSection() {
                   <button
                     onClick={() =>
                       openModal(
-                        "Спрямована на фахівців, які впроваджують у роботу отримані знання за принципом «тут та зараз»."
+                        "In our unique group sessions, we combine art therapy techniques, body-based practices, and group dialogue. This creates a safe and open space where participants can freely express themselves, connect with others, and explore their inner worlds. These groups encourage creativity, self-reflection, and shared experiences, fostering both personal growth and a sense of community. Participants are invited to discover new ways of understanding themselves and others through artistic expression, movement, and meaningful conversation."
                       )
                     }
                     className="text-white text-sm mt-2 cursor-pointer underline"
@@ -192,7 +204,7 @@ export default function EducationSection() {
                   <button
                     onClick={() =>
                       openModal(
-                        "Уможливлює досягнення нового рівня у діяльності або започаткування кар'єри «з нуля»."
+                        "We will help you unlock your creativity, express your feelings through visual techniques, and learn how to connect with yourself through art. These lessons are tailored to your individual needs and goals, offering a safe and supportive environment where you can explore artistic expression at your own pace. Whether you’re a beginner or an experienced artist, our sessions guide you to discover new dimensions of self-understanding, emotional release, and personal growth through the power of creativity."
                       )
                     }
                     className="text-white text-sm mt-2 cursor-pointer underline"
@@ -251,7 +263,7 @@ export default function EducationSection() {
                   <button
                     onClick={() =>
                       openModal(
-                        "Уможливлює досягнення нового рівня у діяльності або започаткування кар'єри «з нуля»."
+                        "We design and deliver customized group programs for teams, educational institutions, volunteer organizations, and social organizations. Our sessions can cover a wide range of topics, including emotional intelligence, stress management, communication skills, conflict resolution, team dynamics, and building a healthy work culture. Through interactive workshops and group discussions, we foster a supportive environment where participants can grow together, develop new skills, and strengthen relationships."
                       )
                     }
                     className="text-white text-sm mt-2 cursor-pointer underline"
