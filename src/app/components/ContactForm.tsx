@@ -60,9 +60,8 @@ export default function ContactForm() {
           className="absolute bottom-0 left-0 w-auto h-auto z-0"
         />
       </div>
-
       {/* Girl */}
-      <div className="absolute bottom-0 right-[-60px] sm:right-[200px] z-60 sm:z-0 h-[auto] w-[250px] sm:w-[300px] md:w-[614px]">
+      <div className="absolute bottom-0 right-[-60px] sm:right-[200px] z-60 h-[auto] w-[250px] sm:w-[300px] md:w-[450px] lg:w-[550px]">
         <Image
           src="/assets/girl.png"
           alt="Girl"
@@ -71,9 +70,8 @@ export default function ContactForm() {
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-auto h-auto z-0"
         />
       </div>
-
       {/* Cup */}
-      <div className="absolute top-[-70px] md:top-[-120px] right-0 z-0 h-[auto] w-[100px] sm:w-[150px] md:w-[200px]">
+      <div className="absolute top-[120px] sm:top-0 right-0 z-0 h-[auto] w-[50px] sm:w-[130px] md:w-[200px]">
         <Image
           src="/assets/cup.png"
           alt="Cup"
@@ -82,7 +80,6 @@ export default function ContactForm() {
           className="absolute top-0 right-0 w-auto h-auto z-0"
         />
       </div>
-
       {/* Ribbon2 */}
       <div className="absolute top-[150px] left-0 sm:left-[145px] z-51 h-[auto] w-[100px] sm:w-[120px] md:w-[200px]">
         <Image
@@ -93,9 +90,8 @@ export default function ContactForm() {
           className="absolute top-0 right-0 w-auto h-auto z-0"
         />
       </div>
-
-      {/* Flower2 */}
-      <div className="absolute top-[130px] left-[60%] md:left-[35%] z-55 h-[auto] w-[40px] sm:w-[45px] md:w-[52px]">
+      {/* Flower2 */}f
+      <div className="absolute top-[200px] left-[60%] md:left-[35%] z-55 h-[auto] w-[50px] sm:w-[60px] md:w-[70px]">
         <Image
           src="/assets/flower2.png"
           alt="flower"
@@ -104,9 +100,8 @@ export default function ContactForm() {
           className="absolute top-0 right-0 w-auto h-auto z-0"
         />
       </div>
-
       {/* Flower2.2 */}
-      <div className="absolute top-[200px] left-[83%] md:left-[40%] z-55 h-[auto] w-[70px] sm:w-[80px] md:w-[97px]">
+      <div className="absolute top-[300px] left-[80%] sm:left-[80%] md:left-[70%] lg:left-[47%] z-55 h-[auto] w-[70px] sm:w-[80px] md:w-[97px]">
         <Image
           src="/assets/flower2.2.png"
           alt="flower"
@@ -115,14 +110,12 @@ export default function ContactForm() {
           className="absolute top-0 right-0 w-auto h-auto z-0"
         />
       </div>
-
       {/* Заголовок */}
-      <h1 className="text-3xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222] relative z-10">
+      <h1 className="text-3xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222] relative z-10 pb-15">
         Do you have any questions
         <br />
         or suggestions?
       </h1>
-
       <div className="z-[50] w-[80%] sm:max-w-[480px] shadow-md rounded-xl px-4 py-10 border-7 border-white/50 mb-[150px] sm:mb-[50px] mx-auto sm:ml-[16%] bg-white relative">
         <h3 className="text-2xl sm:text-[30px] font-medium font-dm text-center mb-3 text-[#222222]">
           Leave a request
@@ -181,7 +174,6 @@ export default function ContactForm() {
           )}
         </form>
       </div>
-
       {/* Нижняя декоративная линия */}
       <Image
         src="/assets/bottom.png"

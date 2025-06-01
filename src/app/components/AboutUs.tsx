@@ -20,13 +20,57 @@ export default function AboutUs() {
   }, [modal1Open, modal2Open]);
 
   return (
-    <section id="about" className="container px-4 py-10">
-      {/* МОДАЛКА 1 */}
-      {modal1Open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center"
-          style={{
-            background: `linear-gradient(
+    <section id="about" className="relative w-full">
+      {/* Левый декор */}
+      <div className="absolute z-0 top-0 left-0 w-[50px] sm:w-[100px] md:w-[150px]">
+        <Image
+          src="/assets/flowers-1.png"
+          alt="flowers"
+          width={371}
+          height={71}
+          className="object-contain"
+        />
+      </div>
+
+      <div className="absolute z-0 bottom-[-400px] left-0 w-[300px]">
+        <Image
+          src="/assets/ribbon1.png"
+          alt="ribbon"
+          width={371}
+          height={71}
+          className="object-contain"
+        />
+      </div>
+
+      {/* Центральный декор */}
+      <div className="absolute z-20 top-[100px] left-[50%]">
+        <Image
+          src="/assets/vs.png"
+          alt="vs"
+          width={115}
+          height={112}
+          className="object-contain"
+        />
+      </div>
+
+      {/* Правый декор */}
+      <div className="absolute z-0 bottom-[-150px] right-0 w-[100px] sm:w-[180px] md:w-[250px]">
+        <Image
+          src="/assets/flowers-2.png"
+          alt="flowers"
+          width={250}
+          height={300}
+          className="object-contain"
+        />
+      </div>
+
+      <div className="container px-4 py-10 mx-auto">
+        {/* МОДАЛКА 1 */}
+        {modal1Open && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center"
+            style={{
+              background: `linear-gradient(
               180deg,
               #D5C9B5 0%,
               #EAE4DA 19%,
@@ -34,33 +78,33 @@ export default function AboutUs() {
               #F5F1ED 75%,
               #FFFFFF 100%
             )`,
-          }}
-        >
-          <div
-            className="bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px] border border-[#09234B] p-6 max-w-3xl w-[90%] relative flex flex-col md:flex-row items-center gap-4"
-            style={{
-              maxHeight: "80vh",
-              overflowY: "auto",
             }}
           >
-            <button
-              onClick={() => setModal1Open(false)}
-              className="absolute top-2 right-4 text-xl text-black"
+            <div
+              className="bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px] border border-[#09234B] p-6 max-w-3xl w-[90%] relative flex flex-col md:flex-row items-center gap-4"
+              style={{
+                maxHeight: "80vh",
+                overflowY: "auto",
+              }}
             >
-              ✕
-            </button>
-            <div className="w-full md:w-1/2 flex justify-center">
-              <Image
-                src="/therapist1.png"
-                alt="Irina"
-                width={200}
-                height={200}
-                className="object-cover rounded-xl"
-              />
-            </div>
-            <div className="flex flex-col w-full md:w-1/2 overflow-auto max-h-[70vh]">
-              <p className="text-[#09234B] font-inter text-[12px] whitespace-pre-line">
-                {`Hello and welcome — I’m so glad you’ve found your way here.
+              <button
+                onClick={() => setModal1Open(false)}
+                className="absolute top-2 right-4 text-xl text-black"
+              >
+                ✕
+              </button>
+              <div className="w-full md:w-1/2 flex justify-center">
+                <Image
+                  src="/therapist1.png"
+                  alt="Irina"
+                  width={200}
+                  height={200}
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <div className="flex flex-col w-full md:w-1/2 overflow-auto max-h-[70vh]">
+                <p className="text-[#09234B] font-inter text-[12px] whitespace-pre-line">
+                  {`Hello and welcome — I’m so glad you’ve found your way here.
 
 My name is Iryna, and I’m an integrative counsellor who works creatively with both individuals and couples. I’ve always believed that within each of us lives an untold story — not just the one we’ve been handed by life, but the one we’re still shaping. My role is to support you in exploring yours, especially in those chapters where pain, confusion, or disconnection might have made the words feel too heavy to write alone.
 
@@ -102,18 +146,18 @@ Iryna
 Peace of Mind Therapy
 Integrative Counsellor | Creative Therapy | Individuals & Couples
 Online | In-Person | Walk & Talk Sessions`}
-              </p>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* МОДАЛКА 2 */}
-      {modal2Open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center"
-          style={{
-            background: `linear-gradient(
+        {/* МОДАЛКА 2 */}
+        {modal2Open && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center"
+            style={{
+              background: `linear-gradient(
               180deg,
               #D5C9B5 0%,
               #EAE4DA 19%,
@@ -121,113 +165,114 @@ Online | In-Person | Walk & Talk Sessions`}
               #F5F1ED 75%,
               #FFFFFF 100%
             )`,
-          }}
-        >
-          <div
-            className="bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px] border border-[#09234B] p-6 max-w-3xl w-[90%] relative flex flex-col md:flex-row items-center gap-4"
-            style={{
-              maxHeight: "80vh",
-              overflowY: "auto",
             }}
           >
-            <button
-              onClick={() => setModal2Open(false)}
-              className="absolute top-2 right-4 text-xl text-black"
+            <div
+              className="bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px] border border-[#09234B] p-6 max-w-3xl w-[90%] relative flex flex-col md:flex-row items-center gap-4"
+              style={{
+                maxHeight: "80vh",
+                overflowY: "auto",
+              }}
             >
-              ✕
-            </button>
-            <div className="w-full md:w-1/2 flex justify-center">
-              <Image
-                src="/therapist2.png"
-                alt="Olena"
-                width={200}
-                height={200}
-                className="object-cover rounded-xl"
-              />
-            </div>
-            <div className="flex flex-col w-full md:w-1/2 overflow-auto max-h-[70vh]">
-              <p className="text-[#09234B] font-inter text-[12px] whitespace-pre-line">
-                {`I am Olena from Zaporizhzhia, Ukraine. Art has always been a part of my life—from a happy childhood, where the first strokes on paper opened up an endless world of creativity, to today, when art has become not only a form of self-expression but also a way to help others.
+              <button
+                onClick={() => setModal2Open(false)}
+                className="absolute top-2 right-4 text-xl text-black"
+              >
+                ✕
+              </button>
+              <div className="w-full md:w-1/2 flex justify-center">
+                <Image
+                  src="/therapist2.png"
+                  alt="Olena"
+                  width={200}
+                  height={200}
+                  className="object-cover rounded-xl"
+                />
+              </div>
+              <div className="flex flex-col w-full md:w-1/2 overflow-auto max-h-[70vh]">
+                <p className="text-[#09234B] font-inter text-[12px] whitespace-pre-line">
+                  {`I am Olena from Zaporizhzhia, Ukraine. Art has always been a part of my life—from a happy childhood, where the first strokes on paper opened up an endless world of creativity, to today, when art has become not only a form of self-expression but also a way to help others.
 
 However, my life’s path took a different course for a long time. I dedicated seven years to serving in the Ukrainian police, working as a company commander and a press officer. This job required strength, resilience, and discipline. But life is unpredictable then the war in Ukraine began, I was on maternity leave and was forced to leave my homeland with my children.
 
 Upon arriving in the UK, I found a new way to be of service—through art. Volunteering at art classes created a space where people could find comfort, experience the joy of creativity, and relieve the stress of difficult times. I happily shared my knowledge, using various painting techniques that helped people cope with challenges and discover new facets of themselves.
 
 Today, my art is no longer just a hobby but a way of serving people in a creative form. I believe that creativity has the power to heal, inspire, and unite and I continue to pour a piece of myself into every painting I create.`}
-              </p>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* Заголовок */}
-      <h2 className="text-lg font-medium mb-4 text-black">About Us</h2>
-      <p className="text-sm md:text-base max-w-3xl mb-10 text-black">
-        We are a team of practicing therapists with years of experience in
-        mental health and art approaches. Our center is a safe and supportive
-        space where you will be heard, understood and helped to find your way
-        back to yourself.
-      </p>
+        {/* Заголовок */}
+        <h2 className="text-lg font-medium mb-4 text-black">About Us</h2>
+        <p className="text-sm md:text-base max-w-3xl mb-10 text-black">
+          We are a team of practicing therapists with years of experience in
+          mental health and art approaches. Our center is a safe and supportive
+          space where you will be heard, understood and helped to find your way
+          back to yourself.
+        </p>
 
-      {/* Кнопки */}
-      <div className="flex justify-start md:justify-end my-6 space-x-4">
-        <button className="px-4 py-2 border bg-[#2437705E]/37 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
-          About us
-        </button>
-        <button className="px-4 py-2 border bg-[#F0D9D4] text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
-          History
-        </button>
-      </div>
-
-      {/* Карточки */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px]">
-        {/* Карточка 1 */}
-        <div className="gap-10 rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
-          <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
-            <Image
-              src="/therapist1.png"
-              alt="Irina"
-              width={150}
-              height={150}
-              className="object-cover z-10"
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <h3 className="text-lg font-semibold mb-2 text-center">Irina</h3>
-            <p className="text-sm text-center">
-              Welcome to a space of mental balance and inner healing.
-            </p>
-            <button
-              onClick={() => setModal1Open(true)}
-              className="text-[#243770] text-sm mt-2 cursor-pointer underline self-center"
-            >
-              more ...
-            </button>
-          </div>
+        {/* Кнопки */}
+        <div className="flex justify-start md:justify-end my-6 space-x-4">
+          <button className="px-4 py-2 border bg-[#2437705E]/37 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
+            About us
+          </button>
+          <button className="px-4 py-2 border bg-[#F0D9D4] text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
+            History
+          </button>
         </div>
 
-        {/* Карточка 2 */}
-        <div className="gap-10 rounded-lg p-6 flex flex-col-reverse md:flex-row items-center text-[#243770]">
-          <div className="flex flex-col w-full">
-            <h3 className="text-lg font-semibold mb-2 text-center">Olena</h3>
-            <p className="text-sm text-center">
-              Welcome to a space of mental balance and inner healing.
-            </p>
-            <button
-              onClick={() => setModal2Open(true)}
-              className="text-[#243770] text-sm mt-2 cursor-pointer underline self-center"
-            >
-              more ...
-            </button>
+        {/* Карточки */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px]">
+          {/* Карточка 1 */}
+          <div className="gap-10 rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
+            <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
+              <Image
+                src="/therapist1.png"
+                alt="Irina"
+                width={150}
+                height={150}
+                className="object-cover z-10"
+              />
+            </div>
+            <div className="flex flex-col w-full">
+              <h3 className="text-lg font-semibold mb-2 text-center">Irina</h3>
+              <p className="text-sm text-center">
+                Welcome to a space of mental balance and inner healing.
+              </p>
+              <button
+                onClick={() => setModal1Open(true)}
+                className="text-[#243770] text-sm mt-2 cursor-pointer underline self-center"
+              >
+                more ...
+              </button>
+            </div>
           </div>
-          <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
-            <Image
-              src="/therapist2.png"
-              alt="Olena"
-              width={150}
-              height={150}
-              className="object-cover z-10"
-            />
+
+          {/* Карточка 2 */}
+          <div className="gap-10 rounded-lg p-6 flex flex-col-reverse md:flex-row items-center text-[#243770]">
+            <div className="flex flex-col w-full">
+              <h3 className="text-lg font-semibold mb-2 text-center">Olena</h3>
+              <p className="text-sm text-center">
+                Welcome to a space of mental balance and inner healing.
+              </p>
+              <button
+                onClick={() => setModal2Open(true)}
+                className="text-[#243770] text-sm mt-2 cursor-pointer underline self-center"
+              >
+                more ...
+              </button>
+            </div>
+            <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
+              <Image
+                src="/therapist2.png"
+                alt="Olena"
+                width={150}
+                height={150}
+                className="object-cover z-10"
+              />
+            </div>
           </div>
         </div>
       </div>

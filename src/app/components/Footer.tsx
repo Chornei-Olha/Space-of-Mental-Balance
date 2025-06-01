@@ -104,7 +104,12 @@ export default function Footer() {
 
         {/* CONTACTS */}
         <div className="text-left md:text-right space-y-2">
-          <p className="text-sm font-medium">+1 981 981-23-19</p>
+          <p className="text-sm font-medium">
+            {" "}
+            <a href="tel:07927673728" className="hover:underline">
+              07927 673 728
+            </a>
+          </p>
           <p className="text-sm text-gray-700">
             info@peaceofmind-therapy.co.uk
           </p>
