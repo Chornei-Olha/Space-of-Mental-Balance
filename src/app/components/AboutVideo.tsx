@@ -17,7 +17,7 @@ export default function AboutVideo({
 }: AboutVideoProps) {
   return (
     <section className="max-w-3xl mt-[50px] shadow-lg overflow-hidden rounded-[20px]">
-      <div className="container p-4 mx-auto bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5]">
+      <div className="container p-8 mx-auto bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5]">
         {" "}
         {title && (
           <h2
