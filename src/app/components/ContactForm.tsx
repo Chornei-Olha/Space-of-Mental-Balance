@@ -61,7 +61,7 @@ export default function ContactForm() {
         />
       </div>
       {/* Girl */}
-      <div className="absolute bottom-0 right-[-60px] sm:right-[200px] z-60 h-[auto] w-[250px] sm:w-[300px] md:w-[450px] lg:w-[550px]">
+      <div className="absolute bottom-0 right-[-60px] sm:right-[200px] z-60 h-[auto] w-[240px] sm:w-[300px] md:w-[450px] lg:w-[550px]">
         <Image
           src="/assets/girl.png"
           alt="Girl"

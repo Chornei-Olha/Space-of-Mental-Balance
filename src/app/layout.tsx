@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import {
   Instrument_Sans,
   Poppins,
-  Manrope,
-  DM_Sans,
-  Inter,
-  Space_Grotesk,
+  // Manrope,
+  // DM_Sans,
+  // Inter,
+  // Space_Grotesk,
 } from "next/font/google";
 import "./globals.css";
 
