@@ -60,7 +60,7 @@ export default function AboutUs() {
       </div>
 
       {/* Правый декор */}
-      <div className="absolute z-0 bottom-[-150px] right-0 w-[100px] sm:w-[180px] md:w-[250px]">
+      <div className="absolute z-0 bottom-[-100px] right-0 w-[100px] sm:w-[180px] md:w-[250px]">
         <Image
           src="/assets/flowers-2.png"
           alt="flowers"
