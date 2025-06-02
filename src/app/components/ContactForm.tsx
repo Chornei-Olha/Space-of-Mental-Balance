@@ -3,6 +3,9 @@
 import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -92,7 +95,9 @@ export default function ContactForm() {
       </div>
 
       {/* Заголовок */}
-      <h1 className="text-3xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222] relative z-10 pb-15">
+      <h1
+        className={`text-3xl sm:text-[56px] font-dm text-center mb-8 text-[#222222] relative z-10 pb-15 font-normal ${poppins.className}`}
+      >
         Do you have any questions
         <br />
         or suggestions?
@@ -118,10 +123,14 @@ export default function ContactForm() {
             className="absolute top-0 right-0 w-auto h-auto z-0"
           />
         </div>
-        <h3 className="text-2xl sm:text-[30px] font-medium font-dm text-center mb-3 text-[#222222]">
+        <h3
+          className={`text-2xl sm:text-[30px] font-dm text-center mb-3 text-[#222222] font-medium ${poppins.className}`}
+        >
           Leave a request
         </h3>
-        <p className="text-base sm:text-lg font-medium font-dm text-center mb-3 text-[#222222]">
+        <p
+          className={`text-base sm:text-lg font-dm text-center mb-3 text-[#222222] font-normal ${poppins.className}`}
+        >
           Managers will contact you and advise on all issues
         </p>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 ">
@@ -155,8 +164,10 @@ export default function ContactForm() {
             </button>
           </div>
 
-          <div className="flex flex-col gap-2 text-sm sm:text-[14px]">
-            <label className="flex items-start gap-2 text-[#222222]">
+          <div className="flex flex-col text-sm sm:text-[14px]">
+            <label
+              className={`flex items-start text-[#222222] font-normal ${poppins.className}`}
+            >
               <input
                 type="checkbox"
                 name="consentInfo"

@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { DM_Sans, Inter } from "next/font/google";
+
+const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function EducationSection() {
   const [modalContent, setModalContent] = useState("");
@@ -72,13 +76,17 @@ export default function EducationSection() {
                     backgroundColor: "rgba(0, 0, 0, 0.25)",
                   }}
                 ></div>
-                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
+                <div
+                  className={`absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl font-normal ${dmSans.className}`}
+                >
                   Individual therapeutic counseling{" "}
                 </div>
               </div>
               <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
-                  <p>
+                  <p
+                    className={`text-sm sm:text-base font-normal ${inter.className}`}
+                  >
                     In the sessions, we gently accompany you in exploring your
                     inner world, helping you to cope with anxiety, stress,
                     crises and emotional ...
@@ -96,7 +104,9 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
+                  <button
+                    className={`bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                  >
                     120 годин{" "}
                   </button>
                   <Image
@@ -131,13 +141,18 @@ export default function EducationSection() {
                     backgroundColor: "rgba(0, 0, 0, 0.25)",
                   }}
                 ></div>
-                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
+                <div
+                  className={`absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl font-normal ${dmSans.className}`}
+                >
                   Creative group activities{" "}
                 </div>
               </div>
               <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-[white] relative">
-                  <p>
+                  <p
+                    className={`text-sm sm:text-base font-normal ${inter.className}`}
+                  >
+                    {" "}
                     In our author groups we combine art therapy techniques,
                     elements of body practices and group dialog. It is a safe
                     and free space ...
@@ -155,7 +170,9 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
+                  <button
+                    className={`bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                  >
                     120 годин{" "}
                   </button>
                   <Image
@@ -190,13 +207,18 @@ export default function EducationSection() {
                     backgroundColor: "rgba(0, 0, 0, 0.25)",
                   }}
                 ></div>
-                <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
+                <div
+                  className={`absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl font-normal ${dmSans.className}`}
+                >
                   Personalized art lessons
                 </div>
               </div>
               <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
-                  <p>
+                  <p
+                    className={`text-sm sm:text-base font-normal ${inter.className}`}
+                  >
+                    {" "}
                     We will help you unlock your creativity, express your
                     feelings through visual techniques and learn how to interact
                     with yourself through art. Lessons ...
@@ -214,7 +236,9 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
+                  <button
+                    className={`bg-white text-black py-2 px-3 rounded-full mt-4} font-bold ${inter.className}`}
+                  >
                     120 годин{" "}
                   </button>
                   <Image
@@ -229,7 +253,9 @@ export default function EducationSection() {
 
             {/* КАРТОЧКА 4 */}
             <div>
-              <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden">
+              <div
+                className={`relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden font-normal ${dmSans.className}`}
+              >
                 <Image
                   src="/assets/Text4.png"
                   alt="Картинка 4"
@@ -255,7 +281,10 @@ export default function EducationSection() {
               </div>
               <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base  font-inter text-white relative">
-                  <p>
+                  <p
+                    className={`text-sm sm:text-base font-normal ${inter.className}`}
+                  >
+                    {" "}
                     We design and deliver group programs for teams, educational
                     institutions, volunteer and social organizations. Topics can
                     range from emotional ...
@@ -273,7 +302,9 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button className="bg-white text-black py-2 px-3 rounded-full mt-4">
+                  <button
+                    className={`bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                  >
                     120 годин{" "}
                   </button>
                   <Image

@@ -3,12 +3,18 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-
+import { Instrument_Sans } from "next/font/google";
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["500"],
+});
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="container px-4 absolute top-0 w-full z-50 py-3 flex justify-between items-center">
+    <header
+      className={`container px-4 absolute top-0 w-full z-50 py-3 flex justify-between items-center font-medium ${instrumentSans.className}`}
+    >
       {/* Лого слева */}
       <Link href="/" passHref>
         <div className="relative w-[250px] md:w-[380px] h-[auto] cursor-pointer">

@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Space_Grotesk } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { Space_Grotesk } from "next/font/google";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: "400" });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400"] });
 
 export default function CustomerReviews() {
   const images = [
@@ -75,7 +75,7 @@ export default function CustomerReviews() {
           {/* Левая колонка: Заголовок и кнопки */}
           <div className="text-center md:text-left md:col-span-1">
             <h2
-              className={`leading-tight text-3xl md:text-5xl lg:text-7xl font-normal text-black mb-5 ${spaceGrotesk.className}`}
+              className={`leading-tight text-3xl md:text-5xl lg:text-7xl text-black mb-5 font-normal ${spaceGrotesk.className}`}
             >
               Our Clients Consider Us The Best{" "}
             </h2>

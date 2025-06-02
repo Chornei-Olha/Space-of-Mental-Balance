@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
 
 export default function HelpSection() {
   return (
@@ -33,10 +36,14 @@ export default function HelpSection() {
         <div className="relative flex flex-col md:flex-row w-full max-w-7xl overflow-hidden rounded-2xl bg-white shadow-md p-6 md:p-8">
           {/* Текстовая часть */}
           <div className="flex-1 pr-0 md:pr-8">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#2D2D2D]">
+            <h2
+              className={`text-2xl md:text-3xl mb-4 text-[#2D2D2D] font-medium ${poppins.className}`}
+            >
               Do you need help?
             </h2>
-            <p className="text-[#2D2D2D] text-base md:text-sm md:w-[70%]">
+            <p
+              className={`text-[#2D2D2D] text-base md:text-sm md:w-[70%] font-normal ${poppins.className}`}
+            >
               We will provide detailed information about our services, types of
               work, and top projects. We will calculate the cost and prepare a
               commercial proposal.
@@ -59,7 +66,7 @@ export default function HelpSection() {
             {/* Кнопка поверх круга */}
             <a
               href="#contact"
-              className="relative z-10 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] bg-clip-text text-transparent md:text-white md:pr-[20px] py-5 md:py-3 rounded-full text-xl font-medium hover:brightness-110 transition"
+              className={`relative z-10 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] bg-clip-text text-transparent md:text-white md:pr-[20px] py-5 md:py-3 rounded-full text-xl hover:brightness-110 transition font-medium ${poppins.className}`}
             >
               Get consultation →
             </a>

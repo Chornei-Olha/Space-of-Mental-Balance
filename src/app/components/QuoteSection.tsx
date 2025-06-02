@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { Instrument_Sans } from "next/font/google";
+
+const instrumentSans = Instrument_Sans({ subsets: ["latin"], weight: ["500"] });
 
 export default function QuoteSection() {
   const quotes = [
@@ -71,10 +74,12 @@ export default function QuoteSection() {
             alt="Decorative Line"
             width={200}
             height={150}
-            className="absolute bottom-0 right-0 w-[200px] h-auto md:w-[400px] md:h-auto object-contain pointer-events-none"
+            className="absolute bottom-0 right-0 w-[200px] h-auto md:w-[350px] md:h-auto object-contain pointer-events-none"
           />
           {/* Текстовая часть */}
-          <div className="items-center font-normal leading-tight text-2xl md:text-3xl lg:text-4xl px-10 pt-[70px]">
+          <div
+            className={`items-center leading-tight text-2xl md:text-3xl lg:text-4xl px-10 pt-[70px] font-medium ${instrumentSans.className}`}
+          >
             <Image
               src={quotes[currentIndex].icon}
               alt="Quote Icon"

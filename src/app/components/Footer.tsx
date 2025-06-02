@@ -7,6 +7,10 @@ import {
 } from "react-icons/fa";
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
+import { Poppins, Inter } from "next/font/google";
+
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
+const inter = Inter({ subsets: ["latin"], weight: ["500"] });
 
 export default function Footer() {
   return (
@@ -24,10 +28,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* INFO */}
           <div>
-            <h4 className="uppercase font-semibold text-sm tracking-widest mb-4">
+            <h4
+              className={`uppercase text-xs tracking-widest mb-4 font-medium ${poppins.className}`}
+            >
               Info
             </h4>
-            <ul className="space-y-2 text-base">
+            <ul
+              className={`space-y-2 text-base font-normal ${poppins.className}`}
+            >
               <li>
                 <a href="#about" className="hover:underline">
                   About us
@@ -52,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Elena & Irina's Contacts (центральная колонка) */}
-          <div className="text-center">
+          <div className={`text-center font-normal ${poppins.className}`}>
             {/* Елена */}
             <div className="mt-6 md:mt-0">
               <div className="mb-4 w-full" />
@@ -126,11 +134,16 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-row justify-between mt-12 border-black pt-6 gap-4">
-          <p className="text-sm text-gray-700">© 2025 — Copyright</p>
+          <p className={`text-xs text-gray-700 font-medium ${inter.className}`}>
+            © 2025 —{" "}
+            <a href="https://impuls-studio.com.ua/" className="hover:underline">
+              ImpulsStudio
+            </a>
+          </p>
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="w-12 h-12 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition"
+            className="w-12 h-12 border border-white rounded-full flex items-center justify-center bg-[#07512A]/26 hover:bg-[#F0D9D4] hover:text-white transition"
           >
             <ArrowUp size={20} />
           </button>

@@ -2,6 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { Instrument_Sans, Poppins, Manrope, Inter } from "next/font/google";
+
+const instrumentSans = Instrument_Sans({ subsets: ["latin"], weight: ["400"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["600"] });
+const inter = Inter({ subsets: ["latin"], weight: ["300"] });
 
 export default function AboutUs() {
   const [modal1Open, setModal1Open] = useState(false);
@@ -205,8 +211,14 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
         )}
 
         {/* Заголовок */}
-        <h2 className="text-lg font-medium mb-4 text-black">About Us</h2>
-        <p className="text-sm md:text-base max-w-3xl mb-10 text-black">
+        <h2
+          className={`text-lg mb-4 text-black font-normal ${instrumentSans.className}`}
+        >
+          About Us
+        </h2>
+        <p
+          className={`text-sm md:text-base max-w-3xl mb-10 text-black font-normal ${instrumentSans.className}`}
+        >
           We are a team of practicing therapists with years of experience in
           mental health and art approaches. Our center is a safe and supportive
           space where you will be heard, understood and helped to find your way
@@ -214,7 +226,9 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
         </p>
 
         {/* Кнопки */}
-        <div className="flex justify-start md:justify-end my-6 space-x-4">
+        <div
+          className={`flex justify-start md:justify-end my-6 space-x-4 font-light ${inter.className}`}
+        >
           <button className="px-4 py-2 border bg-[#2437705E]/37 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
             About us
           </button>
@@ -237,8 +251,14 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
               />
             </div>
             <div className="flex flex-col w-full">
-              <h3 className="text-lg font-semibold mb-2 text-center">Irina</h3>
-              <p className="text-sm text-center">
+              <h3
+                className={`w-[40%] inline-block px-4 py-1 bg-white rounded-full shadow text-[#101119] text-lg mx-auto text-center font-semibold ${manrope.className}`}
+              >
+                Irina
+              </h3>
+              <p
+                className={`text-xl text-center pt-[15px] font-light ${poppins.className}`}
+              >
                 Welcome to a space of mental balance and inner healing.
               </p>
               <button
@@ -253,8 +273,15 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           {/* Карточка 2 */}
           <div className="gap-10 rounded-lg p-6 flex flex-col-reverse md:flex-row items-center text-[#243770]">
             <div className="flex flex-col w-full">
-              <h3 className="text-lg font-semibold mb-2 text-center">Olena</h3>
-              <p className="text-sm text-center">
+              <h3
+                className={`w-[40%] inline-block px-4 py-1 bg-white rounded-full shadow text-[#101119] text-lg mx-auto text-center font-semibold ${manrope.className}`}
+              >
+                Olena
+              </h3>
+              <p
+                className={`text-xl text-center pt-[15px] font-light ${poppins.className}`}
+              >
+                {" "}
                 Welcome to a space of mental balance and inner healing.
               </p>
               <button

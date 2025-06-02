@@ -2,16 +2,20 @@ import type { Metadata } from "next";
 import {
   Instrument_Sans,
   Poppins,
-  // Manrope,
-  // DM_Sans,
-  // Inter,
-  // Space_Grotesk,
+  Manrope,
+  DM_Sans,
+  Inter,
+  Space_Grotesk,
 } from "next/font/google";
 import "./globals.css";
 
 // Импортируем шрифты
-const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
+const instrumentSans = Instrument_Sans({ subsets: ["latin"], weight: ["500"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["500"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["500"] });
+const dmSans = DM_Sans({ subsets: ["latin"], weight: ["500"] });
+const inter = Inter({ subsets: ["latin"], weight: ["500"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500"] });
 
 const SITE_NAME = "Peace of MindTherapy";
 const SITE_DESCRIPTION =
@@ -37,7 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${instrumentSans.className}, ${poppins.className}`}>
+      <body
+        className={`${instrumentSans.className} ${poppins.className} ${manrope.className} ${dmSans.className} ${inter.className} ${spaceGrotesk.className}`}
+      >
         {children}
       </body>
     </html>

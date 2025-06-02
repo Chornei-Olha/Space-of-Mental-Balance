@@ -1,4 +1,11 @@
 import Image from "next/image";
+import { Instrument_Sans, Poppins, Manrope } from "next/font/google";
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["500"],
+});
+const poppins = Poppins({ subsets: ["latin"], weight: ["500"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["500"] });
 
 export default function HeroSection() {
   return (
@@ -18,7 +25,9 @@ export default function HeroSection() {
       {/* ⬆️ Контент поверх */}
       <div className="relative flex items-center justify-center">
         <div className="container px-4 flex flex-col justify-center">
-          <h1 className=" text-5xl md:text-7xl lg:text-9xl font-medium leading-none text-left ${poppins.className}">
+          <h1
+            className={`text-5xl md:text-7xl lg:text-9xl leading-none text-left font-medium ${poppins.className}`}
+          >
             Welcome to creative peace of mind
           </h1>
 
@@ -39,7 +48,9 @@ export default function HeroSection() {
 
           {/* Контентная часть */}
           <div className="mt-6 flex flex-col lg:flex-row md:items-left md:justify-between gap-6 text-left">
-            <p className="max-w-xl text-lg md:text-xl text-medium mx-auto md:mx-0">
+            <p
+              className={`max-w-xl text-lg md:text-xl text-medium mx-auto md:mx-0 font-medium ${instrumentSans.className}`}
+            >
               Welcome to a space of mental balance and inner healing. We combine
               professional therapeutic practices with creative methods to help
               you restore harmony of body, mind and spirit.
@@ -53,7 +64,9 @@ export default function HeroSection() {
               />
               <div className="flex flex-col gap-1 text-white text-lg">
                 {"★★★★★"}
-                <span className="text-base text-white">
+                <span
+                  className={`text-base text-white font-medium ${manrope.className}`}
+                >
                   Rating reviews from 10k people
                 </span>
               </div>
