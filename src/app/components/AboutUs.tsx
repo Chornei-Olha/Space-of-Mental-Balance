@@ -22,7 +22,7 @@ export default function AboutUs() {
   return (
     <section id="about" className="relative w-full">
       {/* Левый декор */}
-      <div className="absolute z-0 top-0 left-0 w-[50px] sm:w-[100px] md:w-[150px]">
+      <div className="absolute z-0 top-[100px] right-0 sm:left-0 sm:right-auto w-[50px] sm:w-[75px] md:w-[100px]">
         <Image
           src="/assets/flowers-1.png"
           alt="flowers"
@@ -43,10 +43,10 @@ export default function AboutUs() {
       </div>
 
       {/* Центральный декор */}
-      <div className="absolute z-20 top-[100px] left-[50%]">
+      <div className="absolute top-[45%] left-[45%] hidden md:block">
         <Image
-          src="/assets/vs.png"
-          alt="vs"
+          src="/assets/flower@.png"
+          alt="flower@"
           width={115}
           height={112}
           className="object-contain"
@@ -64,7 +64,7 @@ export default function AboutUs() {
         />
       </div>
 
-      <div className="container px-4 py-10 mx-auto">
+      <div className="container px-4 py-10 mx-auto relative z-10">
         {/* МОДАЛКА 1 */}
         {modal1Open && (
           <div

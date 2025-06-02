@@ -1,5 +1,10 @@
 "use client";
-import { FaInstagram, FaEnvelope, FaFacebook } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaEnvelope,
+  FaFacebook,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
@@ -77,33 +82,25 @@ export default function Footer() {
             </p>
             <div className="flex justify-center gap-6">
               <a
-                href="https://www.instagram.com/asanka_91?igsh=MThzd3IxaGI4cnVrbw=="
+                href="https://wa.me/447927673728"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-black transition"
               >
-                <FaInstagram className="text-xl" />
+                <FaWhatsapp className="text-xl" />
               </a>
               <a
-                href="mailto:Olena1sanko@gmail.com"
+                href="mailto:info@peaceofmind-therapy.co.uk"
                 className="text-gray-700 hover:text-black transition"
               >
                 <FaEnvelope className="text-xl" />
-              </a>
-              <a
-                href="https://www.facebook.com/share/15MGMdUX8U/?mibextid=wwXIfr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-black transition"
-              >
-                <FaFacebook className="text-xl" />
               </a>
             </div>
           </div>
         </div>
 
         {/* CONTACTS */}
-        <div className="text-left md:text-right space-y-2">
+        {/* <div className="text-left md:text-right space-y-2">
           <p className="text-sm font-medium">
             {" "}
             <a href="tel:07927673728" className="hover:underline">
@@ -113,7 +110,7 @@ export default function Footer() {
           <p className="text-sm text-gray-700">
             info@peaceofmind-therapy.co.uk
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom Section */}
