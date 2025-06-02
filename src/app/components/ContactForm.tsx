@@ -90,26 +90,7 @@ export default function ContactForm() {
           className="absolute top-0 right-0 w-auto h-auto z-0"
         />
       </div>
-      {/* Flower2 */}f
-      <div className="absolute top-[200px] left-[60%] md:left-[35%] z-55 h-[auto] w-[50px] sm:w-[60px] md:w-[70px]">
-        <Image
-          src="/assets/flower2.png"
-          alt="flower"
-          width={200}
-          height={200}
-          className="absolute top-0 right-0 w-auto h-auto z-0"
-        />
-      </div>
-      {/* Flower2.2 */}
-      <div className="absolute top-[300px] left-[80%] sm:left-[80%] md:left-[70%] lg:left-[47%] z-55 h-[auto] w-[70px] sm:w-[80px] md:w-[97px]">
-        <Image
-          src="/assets/flower2.2.png"
-          alt="flower"
-          width={200}
-          height={200}
-          className="absolute top-0 right-0 w-auto h-auto z-0"
-        />
-      </div>
+
       {/* Заголовок */}
       <h1 className="text-3xl sm:text-[56px] font-regular font-dm text-center mb-8 text-[#222222] relative z-10 pb-15">
         Do you have any questions
@@ -117,6 +98,26 @@ export default function ContactForm() {
         or suggestions?
       </h1>
       <div className="z-[50] w-[80%] sm:max-w-[480px] shadow-md rounded-xl px-4 py-10 border-7 border-white/50 mb-[150px] sm:mb-[50px] mx-auto sm:ml-[16%] bg-white relative">
+        {/* Flower2 */}
+        <div className="absolute top-[-100px] left-[50%] z-55 h-[auto] w-[50px] sm:w-[60px] md:w-[70px]">
+          <Image
+            src="/assets/flower2.png"
+            alt="flower"
+            width={200}
+            height={200}
+            className="absolute top-0 right-0 w-auto h-auto z-0"
+          />
+        </div>
+        {/* Flower2.2 */}
+        <div className="absolute top-[80px] right-[-70px] z-55 h-[auto] w-[70px] sm:w-[80px] md:w-[97px]">
+          <Image
+            src="/assets/flower2.2.png"
+            alt="flower"
+            width={200}
+            height={200}
+            className="absolute top-0 right-0 w-auto h-auto z-0"
+          />
+        </div>
         <h3 className="text-2xl sm:text-[30px] font-medium font-dm text-center mb-3 text-[#222222]">
           Leave a request
         </h3>
