@@ -102,7 +102,7 @@ export default function AboutUs() {
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
                   src="/therapist1.png"
-                  alt="Irina"
+                  alt="Iryna"
                   width={200}
                   height={200}
                   className="object-cover rounded-xl"
@@ -244,7 +244,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
             <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
               <Image
                 src="/therapist1.png"
-                alt="Irina"
+                alt="Iryna"
                 width={150}
                 height={150}
                 className="object-cover z-10"
@@ -254,7 +254,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
               <h3
                 className={`w-[40%] inline-block px-4 py-1 bg-white rounded-full shadow text-[#101119] text-lg mx-auto text-center font-semibold ${manrope.className}`}
               >
-                Irina
+                Iryna
               </h3>
               <p
                 className={`text-xl text-center pt-[15px] font-light ${poppins.className}`}

@@ -10,7 +10,7 @@ export default function QuoteSection() {
     {
       icon: "/assets/quote.png",
       text: "Real healing does not happen alone, but in relationships - where you are truly seen, where your pain is not frightening, but accepted with respect and care. In a safe space where you can be yourself, step by step, the contact with yourself returns, an inner resource emerges and the silence within comes. We are there to accompany you on this journey - with care, with attention, without rushing.”",
-      author: "— Irina",
+      author: "— Iryna",
     },
     {
       icon: "/assets/quote.png",

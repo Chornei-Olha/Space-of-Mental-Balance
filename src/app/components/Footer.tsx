@@ -59,7 +59,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Elena & Irina's Contacts (центральная колонка) */}
+          {/* Elena & Iryna's Contacts (центральная колонка) */}
           <div className={`text-center font-normal ${poppins.className}`}>
             {/* Елена */}
             <div className="mt-6 md:mt-0">
@@ -97,7 +97,7 @@ export default function Footer() {
             <div className="mt-10">
               <div className="border-b border-black mb-4 w-full" />
               <p className="uppercase font-semibold text-sm tracking-widest mb-2">
-                Irina’s Contacts
+                Iryna’s Contacts
               </p>
               <div className="flex justify-center gap-6">
                 <a

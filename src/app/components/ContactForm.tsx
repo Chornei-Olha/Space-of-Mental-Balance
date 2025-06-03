@@ -33,18 +33,18 @@ export default function ContactForm() {
   };
 
   useEffect(() => {
-    emailjs.init("achhP-nDveJIR5VOU");
+    emailjs.init("service_hqwpr5u");
   }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!isValid) {
-      setStatus("Будь ласка, підтвердіть згоди.");
+      setStatus("Please confirm your consent");
       return;
     }
 
-    setStatus("Надсилаємо ваше повідомлення...");
+    setStatus("Send your email...");
     // Твой emailjs код
   };
 
