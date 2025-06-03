@@ -19,7 +19,7 @@ export default function Header() {
       <Link href="/" passHref>
         <div className="relative w-[250px] md:w-[380px] h-[auto] cursor-pointer">
           <Image
-            src="/assets/logo.svg"
+            src="/assets/logo.png"
             alt="Blue Circle"
             width={350}
             height={55}
