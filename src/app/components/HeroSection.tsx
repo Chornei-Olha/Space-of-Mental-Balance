@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Instrument_Sans, Poppins, Manrope } from "next/font/google";
+import React, { useState, useRef } from "react";
+
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   weight: ["500"],
@@ -8,10 +12,35 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["500"] });
 const manrope = Manrope({ subsets: ["latin"], weight: ["500"] });
 
 export default function HeroSection() {
+  const [isMuted, setIsMuted] = useState(true);
+  const [volume, setVolume] = useState(0.5); // по умолчанию 50%
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    }
+  };
+  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newVolume = parseFloat(e.target.value);
+    if (videoRef.current) {
+      videoRef.current.volume = newVolume;
+      setVolume(newVolume);
+      if (newVolume === 0) {
+        videoRef.current.muted = true;
+        setIsMuted(true);
+      } else {
+        videoRef.current.muted = false;
+        setIsMuted(false);
+      }
+    }
+  };
+
   return (
     <section className="relative min-h-screen w-full overflow-hidden text-white pt-[152px] pb-[80px]">
       {/* ⬇️ Фоновое видео */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -20,7 +49,40 @@ export default function HeroSection() {
       >
         <source src="/assets/sea.mp4" type="video/mp4" />
         Your browser does not support the video tag.
+      </video> */}
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        playsInline
+        muted={isMuted}
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 scale-[1.23]"
+      >
+        <source src="/assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
+
+      {/* Кнопка управления звуком */}
+      <button
+        onClick={toggleMute}
+        className="absolute bottom-4 right-4 z-10 bg-black bg-opacity-50 px-4 py-2 rounded text-white font-semibold"
+      >
+        {isMuted ? "🔇" : "🔊"}
+      </button>
+
+      {/* Регулировка громкости */}
+      <div className="absolute bottom-16 right-4 z-10 bg-black bg-opacity-50 px-4 py-2 rounded text-white">
+        <label htmlFor="volume">Volume: </label>
+        <input
+          id="volume"
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value={volume}
+          onChange={handleVolumeChange}
+        />
+      </div>
 
       {/* ⬆️ Контент поверх */}
       <div className="relative flex items-center justify-center">
