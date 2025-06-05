@@ -65,13 +65,13 @@ export default function HeroSection() {
       {/* Кнопка управления звуком */}
       <button
         onClick={toggleMute}
-        className="absolute bottom-4 right-4 z-10 bg-black bg-opacity-50 px-4 py-2 rounded text-white font-semibold"
+        className="absolute bottom-4 right-4 z-10 bg-white bg-opacity-50 px-4 py-2 rounded text-black font-semibold"
       >
         {isMuted ? "🔇" : "🔊"}
       </button>
 
       {/* Регулировка громкости */}
-      <div className="absolute bottom-16 right-4 z-10 bg-black bg-opacity-50 px-4 py-2 rounded text-white">
+      <div className="absolute bottom-16 right-4 z-10 bg-white bg-opacity-50 px-4 py-2 rounded text-black">
         <label htmlFor="volume">Volume: </label>
         <input
           id="volume"
