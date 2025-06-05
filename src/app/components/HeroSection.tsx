@@ -71,7 +71,7 @@ export default function HeroSection() {
       </button>
 
       {/* Регулировка громкости */}
-      <div className="absolute bottom-16 right-4 z-10 bg-white bg-opacity-50 px-4 py-2 rounded text-black">
+      <div className="absolute bottom-13 right-4 z-10 bg-white bg-opacity-50 px-4 py-2 rounded text-black">
         <label htmlFor="volume">Volume: </label>
         <input
           id="volume"
