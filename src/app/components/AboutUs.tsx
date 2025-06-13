@@ -188,10 +188,10 @@ Online | In-Person | Walk & Talk Sessions`}
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/therapist2.png"
+                  src="/assets/therapist02.jpg"
                   alt="Olena"
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   className="object-cover rounded-xl"
                 />
               </div>
