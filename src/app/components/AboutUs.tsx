@@ -101,10 +101,10 @@ export default function AboutUs() {
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/therapist1.png"
+                  src="/assets/therapist01.jpeg"
                   alt="Iryna"
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   className="object-cover rounded-xl"
                 />
               </div>
@@ -243,10 +243,10 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           <div className="gap-10 rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
             <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
               <Image
-                src="/therapist1.png"
+                src="/assets/therapist1.png"
                 alt="Iryna"
-                width={150}
-                height={150}
+                width={300}
+                height={300}
                 className="object-cover z-10"
               />
             </div>
@@ -293,10 +293,10 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
             </div>
             <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
               <Image
-                src="/therapist2.png"
+                src="/assets/therapist2.png"
                 alt="Olena"
-                width={150}
-                height={150}
+                width={300}
+                height={300}
                 className="object-cover z-10"
               />
             </div>
