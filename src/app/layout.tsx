@@ -17,7 +17,7 @@ const dmSans = DM_Sans({ subsets: ["latin"], weight: ["500"] });
 const inter = Inter({ subsets: ["latin"], weight: ["500"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500"] });
 
-const SITE_NAME = "Peace of MindTherapy";
+const SITE_NAME = "Peace of Mind Therapy";
 const SITE_DESCRIPTION =
   "We combine professional therapeutic practices with creative methods to help you restore harmony of body, mind and spirit.";
 

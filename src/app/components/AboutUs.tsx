@@ -101,7 +101,7 @@ export default function AboutUs() {
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/assets/therapist01.jpeg"
+                  src="/assets/therapist01.png"
                   alt="Iryna"
                   width={300}
                   height={300}
@@ -188,7 +188,7 @@ Online | In-Person | Walk & Talk Sessions`}
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/assets/therapist02.jpg"
+                  src="/assets/therapist02.png"
                   alt="Olena"
                   width={300}
                   height={300}
