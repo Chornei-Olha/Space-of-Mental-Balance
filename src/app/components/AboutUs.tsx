@@ -101,7 +101,7 @@ export default function AboutUs() {
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/assets/therapist01.png"
+                  src="/assets/therapist01.webp"
                   alt="Iryna"
                   width={300}
                   height={300}
@@ -188,7 +188,7 @@ Online | In-Person | Walk & Talk Sessions`}
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/assets/therapist02.png"
+                  src="/assets/therapist02.webp"
                   alt="Olena"
                   width={300}
                   height={300}
@@ -243,7 +243,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           <div className="gap-10 rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
             <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
               <Image
-                src="/assets/therapist1.png"
+                src="/assets/therapist1.webp"
                 alt="Iryna"
                 width={300}
                 height={300}
@@ -293,7 +293,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
             </div>
             <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
               <Image
-                src="/assets/therapist2.png"
+                src="/assets/therapist2.webp"
                 alt="Olena"
                 width={300}
                 height={300}
