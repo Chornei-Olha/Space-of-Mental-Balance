@@ -104,11 +104,16 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button
-                    className={`bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                  <a
+                    href="#contact"
+                    className="flex items-center gap-2 cursor-pointer"
                   >
-                    120 годин{" "}
-                  </button>
+                    <button
+                      className={`cursor-pointer bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                    >
+                      Enquiry
+                    </button>
+                  </a>
                   <Image
                     src="/assets/vector-for-card.svg"
                     alt="Декор"
@@ -170,11 +175,16 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button
-                    className={`bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                  <a
+                    href="#contact"
+                    className="flex items-center gap-2 cursor-pointer"
                   >
-                    120 годин{" "}
-                  </button>
+                    <button
+                      className={`cursor-pointer bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                    >
+                      Enquiry
+                    </button>
+                  </a>
                   <Image
                     src="/assets/vector-for-card.svg"
                     alt="Декор"
@@ -236,11 +246,16 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button
-                    className={`bg-white text-black py-2 px-3 rounded-full mt-4} font-bold ${inter.className}`}
+                  <a
+                    href="#contact"
+                    className="flex items-center gap-2 cursor-pointer"
                   >
-                    120 годин{" "}
-                  </button>
+                    <button
+                      className={`cursor-pointer bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                    >
+                      Enquiry
+                    </button>
+                  </a>
                   <Image
                     src="/assets/vector-for-card.svg"
                     alt="Декор"
@@ -302,11 +317,16 @@ export default function EducationSection() {
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
-                  <button
-                    className={`bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                  <a
+                    href="#contact"
+                    className="flex items-center gap-2 cursor-pointer"
                   >
-                    120 годин{" "}
-                  </button>
+                    <button
+                      className={`cursor-pointer bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                    >
+                      Enquiry
+                    </button>
+                  </a>
                   <Image
                     src="/assets/vector-for-card.svg"
                     alt="Декор"
