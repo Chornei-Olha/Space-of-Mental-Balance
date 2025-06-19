@@ -104,7 +104,7 @@ export default function AboutUs() {
               </button>
               <div className="w-full md:w-1/2 flex justify-center">
                 <Image
-                  src="/assets/therapist01.png"
+                  src="/assets/therapist01.webp"
                   alt="Iryna"
                   width={300}
                   height={300}
@@ -218,9 +218,9 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           <button className="px-4 py-2 border bg-[#2437705E]/37 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
             About us
           </button>
-          <button className="px-4 py-2 border bg-[#F0D9D4] text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
+          {/* <button className="px-4 py-2 border bg-[#F0D9D4] text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
             History
-          </button>
+          </button> */}
         </div>
         {/* Заголовок */}
         {/* <h2
