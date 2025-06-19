@@ -90,7 +90,7 @@ export default function HeroSection() {
           <h1
             className={`text-5xl md:text-7xl lg:text-9xl leading-none text-left max-w-6xl font-medium apple-chancery`}
           >
-            Welcome to creative peace of mind
+            Welcome to Сreative Peace Of Mind
           </h1>
 
           <div className="mt-[130px] sm:mt-[180px] text-left">
