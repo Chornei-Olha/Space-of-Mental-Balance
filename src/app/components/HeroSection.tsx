@@ -88,7 +88,7 @@ export default function HeroSection() {
       <div className="relative flex items-center justify-center">
         <div className="container px-4 flex flex-col justify-center">
           <h1
-            className={`text-5xl md:text-7xl lg:text-9xl leading-none text-left font-medium apple-chancery`}
+            className={`text-5xl md:text-7xl lg:text-9xl leading-none text-left max-w-6xl font-medium apple-chancery`}
           >
             Welcome to creative peace of mind
           </h1>
