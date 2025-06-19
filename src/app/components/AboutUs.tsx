@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Instrument_Sans, Poppins, Manrope, Inter } from "next/font/google";
+import { Poppins, Manrope, Inter } from "next/font/google";
 
-const instrumentSans = Instrument_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
+// const instrumentSans = Instrument_Sans({
+//   subsets: ["latin"],
+//   weight: ["400", "600"],
+// });
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "600"] });
 const manrope = Manrope({ subsets: ["latin"], weight: ["600"] });
 const inter = Inter({ subsets: ["latin"], weight: ["300"] });
