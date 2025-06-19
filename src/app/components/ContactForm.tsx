@@ -210,6 +210,8 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    email: "",
+    comment: "",
     consentInfo: false,
     consentPolicy: false,
   });
@@ -257,6 +259,8 @@ export default function ContactForm() {
       setFormData({
         name: "",
         phone: "",
+        email: "",
+        comment: "",
         consentInfo: false,
         consentPolicy: false,
       });
@@ -394,6 +398,52 @@ export default function ContactForm() {
               onChange={handleChange}
               maxLength={20}
               className="w-full text-[#4A4A4A] text-base font-inter outline-none"
+              required
+            />
+          </div>
+
+          {/* Email Field */}
+          <div className="flex items-center bg-white rounded-lg shadow-md px-4 py-2">
+            <div className="flex items-center justify-center bg-[#E7C2A3] rounded-full w-10 h-10 mr-4">
+              <Image
+                src="/assets/email.png"
+                alt="email"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              value={formData.email}
+              onChange={handleChange}
+              maxLength={20}
+              className="w-full text-[#4A4A4A] text-base font-inter outline-none"
+              required
+            />
+          </div>
+
+          {/* Comment Field */}
+          <div className="flex items-start bg-white rounded-lg shadow-md px-4 py-2">
+            <div className="flex items-center justify-center bg-[#E7C2A3] rounded-full w-10 h-10 mr-4 mt-1">
+              <Image
+                src="/assets/comment.png"
+                alt="comment"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+            </div>
+            <textarea
+              name="comment"
+              placeholder="Comment"
+              value={formData.comment}
+              onChange={handleChange}
+              maxLength={500}
+              rows={4}
+              className="w-full text-[#4A4A4A] text-base font-inter outline-none resize-none"
               required
             />
           </div>
