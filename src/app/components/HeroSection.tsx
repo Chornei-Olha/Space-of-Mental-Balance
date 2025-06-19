@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { Instrument_Sans, Poppins, Manrope } from "next/font/google";
+import { Instrument_Sans, Manrope } from "next/font/google";
 import React, { useState, useRef } from "react";
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   weight: ["500"],
 });
-const poppins = Poppins({ subsets: ["latin"], weight: ["500"] });
+// const poppins = Poppins({ subsets: ["latin"], weight: ["500"] });
 const manrope = Manrope({ subsets: ["latin"], weight: ["500"] });
 
 export default function HeroSection() {
