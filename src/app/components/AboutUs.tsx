@@ -396,7 +396,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           </button>
         </div>
         {/* Новая секция */}
-        <div className="container px-4 mx-auto py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="container px-4 mx-auto pb-10 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="md:col-span-2 md:col-start-2">
             {/* КАРТОЧКА */}
             <div>
