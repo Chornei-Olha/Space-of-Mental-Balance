@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Poppins, Manrope, Inter } from "next/font/google";
@@ -16,6 +16,18 @@ export default function AboutUs() {
   const [modal1Open, setModal1Open] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
 
+  const [modalContent, setModalContent] = useState<React.ReactNode>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (content: React.ReactNode) => {
+    setModalContent(content);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   // Блокируем прокрутку body, если любая модалка открыта
   useEffect(() => {
     if (modal1Open || modal2Open) {
@@ -28,6 +40,142 @@ export default function AboutUs() {
     };
   }, [modal1Open, modal2Open]);
 
+  const OurStoryModalContent: React.FC = () => (
+    <div className={`text-black ${poppins.className}`}>
+      <p className="text-xl mb-2 font-semibold">
+        Our Story: Where Counselling Meets Art
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        Some collaborations are born from planning, others from passion — and
+        some simply grow out of friendship.
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        We are Iryna, an integrative counsellor, and Olena, a professional
+        artist. What began as quiet conversations between two friends — one
+        listening deeply to emotions, the other expressing them through colour
+        and form — soon blossomed into something more. Over time, we realised we
+        weren’t just talking about creativity and healing. We were dreaming up a
+        shared space where the two could meet.
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        And so our joint project was born: a unique therapeutic offering that
+        blends the depth of counselling with the power of artistic expression.
+        Together, we create and hold spaces where people can explore emotions,
+        relationships, and inner landscapes through both talk and creative
+        process — a place where healing doesn’t always require the right words,
+        but invites the right connection.
+      </p>
+      <p className="text-sm md:text-base mb-5 font-normal">
+        “Art can permeate the very deepest part of us, where no words exist.” —
+        Eileen Miller, creative therapist
+      </p>
+
+      <p className="text-xl mb-2 font-semibold">What We Offer</p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        We work with individuals, couples, and groups, using integrative
+        creative therapy to help you reconnect with your inner self, your
+        partner, or your community. Whether you’re struggling with anxiety,
+        emotional blockages, communication issues, or simply want to reconnect
+        with your creative spirit — this work can open unexpected doors.
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        Our sessions may take place:
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        🌿 In a cosy, welcoming therapy room
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        🌿 Outside on the beach, in the forest, or beneath the open sky
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        🌿 Or a mix of both — depending on the season and the soul’s needs
+      </p>
+
+      <p className="text-sm md:text-base mb-2 font-normal">
+        Examples of Creative Work We Explore Together:
+      </p>
+      <ul className="list-disc ml-5 text-sm md:text-base mb-2 font-normal">
+        <li>
+          Drawing Emotions — a guided process to give colour, shape, and space
+          to feelings that may be difficult to verbalise. Sometimes the most
+          important emotion is the one we didn’t realise we were holding.
+        </li>
+        <li>
+          “Inside/Outside” Self-Portraits — a powerful exercise used in creative
+          therapy to explore the contrast between how you appear to the world
+          and how you feel within.
+        </li>
+        <li>
+          The Journey Map — visually mapping life experiences through symbols,
+          colours, or scenes, helping make sense of the path you’ve walked and
+          where you’re heading.
+        </li>
+        <li>
+          Drawing the Relationship — a non-verbal process for couples to explore
+          their emotional connection, communication patterns, and shared space.
+        </li>
+        <li>
+          Nature-Based Creative Rituals — creating art using natural materials
+          found in the landscape around us — sand, leaves, stones — to honour
+          transitions, express feelings, or let go.
+        </li>
+      </ul>
+
+      <p className="text-sm md:text-base mb-2 font-normal">
+        And sometimes, it’s as simple — and as profound — as sitting quietly
+        beside a canvas and seeing what emerges.
+      </p>
+      <p className="text-sm md:text-base mb-5 font-normal">
+        “Every child is an artist. The problem is how to remain an artist once
+        we grow up.” — Pablo Picasso
+      </p>
+
+      <p className="text-xl mb-2 font-semibold">Why It Matters</p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        We live in a world that rushes us toward answers and productivity. But
+        healing often requires a different rhythm — a slower unfolding. In our
+        work, there is space to feel, to explore, to reconnect. Creativity
+        becomes more than just expression — it becomes a form of communication
+        with the self, a bridge between the known and the unknown.
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        We believe that creative therapy is not about being “artistic” — it’s
+        about being real. You don’t need experience or technique, only a
+        willingness to be curious and open.
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        “When we are no longer able to change a situation, we are challenged to
+        change ourselves.” — Viktor Frankl
+      </p>
+      <p className="text-sm md:text-base mb-5 font-normal">
+        And through this work, change happens — gently, but powerfully.
+      </p>
+
+      <p className="text-xl mb-2 font-semibold">A Friendship Turned Offering</p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        What makes our work unique is the relationship behind it. We are friends
+        as well as professionals, and our deep respect for one another — and for
+        the people we work with — is at the heart of everything we offer.
+      </p>
+      <p className="text-sm md:text-base mb-2 font-normal">
+        We come together not just as counsellor and artist, but as two women who
+        believe that the human heart heals best when it is both heard and seen.
+      </p>
+      <p className="text-sm md:text-base mb-5 font-normal">
+        We invite you to join us — in a room, in the forest, or on the sand. Let
+        your story unfold not only in words, but in lines, colours, textures,
+        and metaphors. Together, we’ll hold space for what needs to be spoken,
+        drawn, released, and reclaimed.
+      </p>
+
+      <p className="text-sm md:text-base mb-10 font-semibold">
+        With warmth and creativity, Iryna & Olena
+        <br />
+        Peace of Mind Therapy – Creative Counselling & Art-Led Healing for
+        Individuals, Couples & Groups
+      </p>
+    </div>
+  );
   return (
     <section id="about" className="relative w-full">
       {/* Левый декор */}
@@ -211,6 +359,34 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
             </div>
           </div>
         )}
+        {isModalOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto"
+            style={{
+              background: `linear-gradient(
+        180deg,
+        #D5C9B5 0%,
+        #EAE4DA 19%,
+        #F1EEE7 68%,
+        #F5F1ED 75%,
+        #FFFFFF 100%
+      )`,
+            }}
+          >
+            <div className="bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px] border border-[#09234B] p-6 w-[90%] h-[90%] md:max-w-[80vw] md:max-h-[80vh] overflow-y-auto relative">
+              <button
+                onClick={closeModal}
+                className="absolute top-2 right-4 text-xl text-black"
+              >
+                ✕
+              </button>
+              <p className="text-[#09234B] font-inter text-[14px] whitespace-pre-line">
+                {modalContent}
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* Кнопки */}
         <div
           className={`flex justify-start md:justify-end my-6 space-x-4 font-light ${inter.className}`}
@@ -218,218 +394,78 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           <button className="px-4 py-2 border bg-[#2437705E]/37 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
             About us
           </button>
-          {/* <button className="px-4 py-2 border bg-[#F0D9D4] text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
-            History
-          </button> */}
         </div>
-        {/* Заголовок */}
-        {/* <h2
-          className={`text-lg mb-5 text-black font-normal ${instrumentSans.className}`}
-        >
-          About Us
-        </h2> */}
-        <div className="grid grid-cols-1 gap-6 bg-gradient-to-t from-[#12DCDC] to-[#D5C9B5] rounded-[20px] mb-10">
-          <div className="gap-5 rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
-            <div className="bg-[#07512A42]/26 rounded-xl p-4 relative w-full flex justify-center">
-              <Image
-                src="/assets/aboutUs.webp"
-                alt="our team"
-                width={300}
-                height={300}
-                className="object-cover z-10 rounded-xl"
-              />
-            </div>
-            <div className="flex flex-col w-full">
-              <p
-                className={`container text-xl mb-2 font-semibold ${poppins.className}`}
-              >
-                Our Story: Where Counselling Meets Art
-              </p>{" "}
-              <p
-                className={`container text-sm md:text-base mb-2  font-normal ${poppins.className}`}
-              >
-                Some collaborations are born from planning, others from passion
-                — and some simply grow out of friendship.
-              </p>
-              <p
-                className={`container text-sm md:text-base mb-2 font-normal ${poppins.className}`}
-              >
-                We are Iryna, an integrative counsellor, and Olena, a
-                professional artist. What began as quiet conversations between
-                two friends — one listening deeply to emotions, the other
-                expressing them through colour and form — soon blossomed into
-                something more. Over time, we realised we weren’t just talking
-                about creativity and healing. We were dreaming up a shared space
-                where the two could meet.
-              </p>
-              <p
-                className={`container text-sm md:text-base mb-2 font-normal ${poppins.className}`}
-              >
-                And so our joint project was born: a unique therapeutic offering
-                that blends the depth of counselling with the power of artistic
-                expression. Together, we create and hold spaces where people can
-                explore emotions, relationships, and inner landscapes through
-                both talk and creative process — a place where healing doesn’t
-                always require the right words, but invites the right
-                connection.
-              </p>
-              <p
-                className={`container text-sm md:text-base mb-5 font-normal ${poppins.className}`}
-              >
-                “Art can permeate the very deepest part of us, where no words
-                exist.” — Eileen Miller, creative therapist
-              </p>
+        {/* Новая секция */}
+        <div className="container px-4 mx-auto py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="md:col-span-2 md:col-start-2">
+            {/* КАРТОЧКА */}
+            <div>
+              <div className="relative h-[300px] sm:h-[280px] md:h-[344px] lg:h-[450px] rounded-2xl overflow-hidden">
+                <Image
+                  src="/assets/AboutUs.webp"
+                  alt="Картинка 1"
+                  fill
+                  className="object-cover"
+                  style={{
+                    WebkitMaskImage: `
+        linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%)
+      `,
+                    WebkitMaskComposite: "intersect",
+                    maskImage: `
+        linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%)
+      `,
+                    maskComposite: "intersect",
+                    WebkitMaskRepeat: "no-repeat",
+                    WebkitMaskSize: "100% 100%",
+                    maskRepeat: "no-repeat",
+                    maskSize: "100% 100%",
+                  }}
+                />
+              </div>
+
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
+                <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
+                  <p
+                    className={`text-sm sm:text-base font-normal ${inter.className}`}
+                  >
+                    Our Story: Where Counselling Meets Art
+                    <br />
+                    Some collaborations are born from planning, others from
+                    passion — and some simply grow out of friendship ...
+                  </p>
+                  <button
+                    onClick={() => openModal(<OurStoryModalContent />)}
+                    className="text-white text-sm mt-2 cursor-pointer underline"
+                  >
+                    more ...
+                  </button>
+                </div>
+
+                <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
+                  <a
+                    href="#contact"
+                    className="flex items-center gap-2 cursor-pointer"
+                  >
+                    <button
+                      className={`cursor-pointer bg-white text-black py-2 px-3 rounded-full mt-4 font-bold ${inter.className}`}
+                    >
+                      Enquiry
+                    </button>
+                  </a>
+                  <Image
+                    src="/assets/vector-for-card.svg"
+                    alt="Декор"
+                    fill
+                    className="absolute bottom-0 right-0 w-full h-auto object-cover z-0 pointer-events-none"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <p
-          className={`container text-xl mb-2 text-black font-semibold ${poppins.className}`}
-        >
-          What We Offer
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          We work with individuals, couples, and groups, using integrative
-          creative therapy to help you reconnect with your inner self, your
-          partner, or your community. Whether you’re struggling with anxiety,
-          emotional blockages, communication issues, or simply want to reconnect
-          with your creative spirit — this work can open unexpected doors.
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          Our sessions may take place:
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          🌿 In a cosy, welcoming therapy room
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          🌿 Outside on the beach, in the forest, or beneath the open sky
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          🌿 Or a mix of both — depending on the season and the soul’s needs
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          Examples of Creative Work We Explore Together:
-          <ul
-            className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-          >
-            <li>
-              • Drawing Emotions — a guided process to give colour, shape, and
-              space to feelings that may be difficult to verbalise. Sometimes
-              the most important emotion is the one we didn’t realise we were
-              holding.
-            </li>
-            <li>
-              • “Inside/Outside” Self-Portraits — a powerful exercise used in
-              creative therapy to explore the contrast between how you appear to
-              the world and how you feel within.
-            </li>
-            <li>
-              • The Journey Map — visually mapping life experiences through
-              symbols, colours, or scenes, helping make sense of the path you’ve
-              walked and where you’re heading
-            </li>
-            <li>
-              • Drawing the Relationship — a non-verbal process for couples to
-              explore their emotional connection, communication patterns, and
-              shared space.
-            </li>
-            <li>
-              • Nature-Based Creative Rituals — creating art using natural
-              materials found in the landscape around us — sand, leaves, stones
-              — to honour transitions, express feelings, or let go.
-            </li>{" "}
-          </ul>
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          And sometimes, it’s as simple — and as profound — as sitting quietly
-          beside a canvas and seeing what emerges.
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-5 text-black font-normal ${poppins.className}`}
-        >
-          “Every child is an artist. The problem is how to remain an artist once
-          we grow up.” — Pablo Picasso
-        </p>
-        <p
-          className={`container text-xl mb-2 text-black font-semibold ${poppins.className}`}
-        >
-          Why It Matters
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          We live in a world that rushes us toward answers and productivity. But
-          healing often requires a different rhythm — a slower unfolding. In our
-          work, there is space to feel, to explore, to reconnect. Creativity
-          becomes more than just expression — it becomes a form of communication
-          with the self, a bridge between the known and the unknown.
-        </p>{" "}
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          We believe that creative therapy is not about being “artistic” — it’s
-          about being real. You don’t need experience or technique, only a
-          willingness to be curious and open.
-        </p>{" "}
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          “When we are no longer able to change a situation, we are challenged
-          to change ourselves.” — Viktor Frankl
-        </p>{" "}
-        <p
-          className={`container text-sm md:text-base mb-5 text-black font-normal ${poppins.className}`}
-        >
-          And through this work, change happens — gently, but powerfully.
-        </p>{" "}
-        <p
-          className={`container text-xl mb-2 text-black font-semibold ${poppins.className}`}
-        >
-          A Friendship Turned Offering
-        </p>{" "}
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          What makes our work unique is the relationship behind it. We are
-          friends as well as professionals, and our deep respect for one another
-          — and for the people we work with — is at the heart of everything we
-          offer.
-        </p>{" "}
-        <p
-          className={`container text-sm md:text-base mb-2 text-black font-normal ${poppins.className}`}
-        >
-          We come together not just as counsellor and artist, but as two women
-          who believe that the human heart heals best when it is both heard and
-          seen.
-        </p>{" "}
-        <p
-          className={`container text-sm md:text-base mb-5 text-black font-normal ${poppins.className}`}
-        >
-          We invite you to join us — in a room, in the forest, or on the sand.
-          Let your story unfold not only in words, but in lines, colours,
-          textures, and metaphors. Together, we’ll hold space for what needs to
-          be spoken, drawn, released, and reclaimed.
-        </p>
-        <p
-          className={`container text-sm md:text-base mb-10 text-black font-semibold ${poppins.className}`}
-        >
-          With warmth and creativity, Iryna & Olena Peace of Mind Therapy –
-          Creative Counselling & Art-Led Healing for Individuals, Couples &
-          Groups
-        </p>
+
         {/* Карточки */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gradient-to-r from-[#12DCDC] to-[#D5C9B5] rounded-[20px]">
           {/* Карточка 1 */}
