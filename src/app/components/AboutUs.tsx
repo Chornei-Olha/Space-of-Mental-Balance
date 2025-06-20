@@ -402,8 +402,8 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
             <div>
               <div className="relative h-[300px] sm:h-[280px] md:h-[344px] lg:h-[450px] rounded-2xl overflow-hidden">
                 <Image
-                  src="/assets/AboutUs.webp"
-                  alt="Картинка 1"
+                  src="/assets/aboutUs.webp"
+                  alt="about Us"
                   fill
                   className="object-cover"
                   style={{
