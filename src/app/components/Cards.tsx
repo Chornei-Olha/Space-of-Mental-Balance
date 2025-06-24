@@ -8,13 +8,13 @@ const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400"] });
 const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function EducationSection() {
-  const [modalContent, setModalContent] = useState("");
+  // const [modalContent, setModalContent] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = (text: string) => {
-    setModalContent(text);
-    setIsModalOpen(true);
-  };
+  // const openModal = (text: string) => {
+  //   setModalContent(text);
+  //   setIsModalOpen(true);
+  // };
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -44,9 +44,9 @@ export default function EducationSection() {
             >
               ✕
             </button>
-            <p className="text-[#09234B] font-inter text-[16px] whitespace-pre-line">
+            {/* <p className="text-[#09234B] font-inter text-[16px] whitespace-pre-line">
               {modalContent}
-            </p>
+            </p> */}
           </div>
         </div>
       )}
@@ -92,16 +92,14 @@ export default function EducationSection() {
                     ...
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button
-                      onClick={() =>
-                        openModal(
-                          "Therapy isn’t about having the right words - it’s about having a space where you don’t have to hold it all together.\n In our sessions, you’re invited to slow down, be real, and explore whatever’s on your mind or weighing on your heart. There’s no “right way” to begin. Whether you’re feeling anxious, disconnected, navigating relationship struggles or simply unsure of what’s next, we’ll work together to understand what’s happening beneath the surface and find what helps you feel more like yourself again.\n I work with both individuals and couples, offering:\n - 50-minute sessions for individuals\n - 60-minute sessions for couples\n You can choose to meet online, in-person in Christchurch, or even take therapy outdoors - with walk-and-talk sessions or creative work by the sea. For those who prefer more than just talking, I offer the option to explore with imagery, symbols, or gentle creative methods. No pressure, and no artistic skill needed - just curiosity and openness.\n Some clients come weekly for short-term support, others stay longer for deeper reflection and healing. There’s no fixed path - we shape it together.\n If you’re not sure where to start, that’s completely okay. I offer a free 30-minute call so you can ask questions, get a feel for how I work, and decide what feels right for you.\n"
-                        )
-                      }
+                    <a
+                      href="/sessions"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white text-sm mt-2 cursor-pointer underline"
                     >
                       more ...
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -165,16 +163,14 @@ export default function EducationSection() {
                     and free space ...
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button
-                      onClick={() =>
-                        openModal(
-                          "In our unique group sessions, we combine creative therapy techniques, body-based practices, and group dialogue. This creates a safe and open space where participants can freely express themselves, connect with others, and explore their inner worlds. These groups encourage creativity, self-reflection, and shared experiences, fostering both personal growth and a sense of community. Participants are invited to discover new ways of understanding themselves and others through artistic expression, movement, and meaningful conversation."
-                        )
-                      }
+                    <a
+                      href="/activities"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white text-sm mt-2 cursor-pointer underline"
                     >
                       more ...
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -238,16 +234,14 @@ export default function EducationSection() {
                     with yourself through art. Lessons ...
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button
-                      onClick={() =>
-                        openModal(
-                          "We will help you unlock your creativity, express your feelings through visual techniques, and learn how to connect with yourself through art. These lessons are tailored to your individual needs and goals, offering a safe and supportive environment where you can explore artistic expression at your own pace. Whether you’re a beginner or an experienced artist, our sessions guide you to discover new dimensions of self-understanding, emotional release, and personal growth through the power of creativity."
-                        )
-                      }
+                    <a
+                      href="/artLessons"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white text-sm mt-2 cursor-pointer underline"
                     >
                       more ...
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -311,16 +305,14 @@ export default function EducationSection() {
                     looking to support emotional health ...
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button
-                      onClick={() =>
-                        openModal(
-                          "We offer bespoke consultations and creative wellbeing sessions for organisations, community groups, and teams looking to support emotional health, communication, and connection in the workplace or shared spaces.\nWhether you’re charity, business, or creative collective, we can design sessions that meet your group’s unique needs - from reflective wellbeing workshops and art-based team building to emotional support sessions around change, stress, or burnout.\nOur work draws on therapeutic, relational, and creative practices to foster trust, reduce tension, and create safe spaces for expression. Sessions can be delivered as one-off events, ongoing group support, or part of a wider wellbeing programme.\nLet’s talk about how we can support your team or community in a way that feels meaningful, inclusive, and sustainable."
-                        )
-                      }
+                    <a
+                      href="/consultations"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white text-sm mt-2 cursor-pointer underline"
                     >
                       more ...
-                    </button>
+                    </a>
                   </div>
                 </div>
 

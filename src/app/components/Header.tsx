@@ -32,23 +32,17 @@ export default function Header() {
       {/* Desktop navigation справа */}
       <nav className="hidden lg:flex space-x-3 items-center">
         <Link
-          href="#about"
+          href="/#about"
           className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
         >
           About us
         </Link>
         <Link
-          href="#services"
+          href="/#services"
           className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
         >
           Services
         </Link>
-        {/* <Link
-          href="#groups"
-          className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
-        >
-          For groups
-        </Link> */}
         <Link
           href="#contact"
           className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
@@ -70,26 +64,20 @@ export default function Header() {
       {menuOpen && (
         <div className="absolute top-full h-screen left-0 w-full bg-gradient-to-r from-blue-400 to-cyan-500 text-white flex flex-col items-center space-y-4 py-6 lg:hidden">
           <Link
-            href="#about"
+            href="/#about"
             onClick={() => setMenuOpen(false)}
             className="text-lg px-4 py-2 hover:bg-white hover:text-black rounded-full transition"
           >
             About us
           </Link>
           <Link
-            href="#services"
+            href="/#services"
             onClick={() => setMenuOpen(false)}
             className="text-lg px-4 py-2 hover:bg-white hover:text-black rounded-full transition"
           >
             Services
           </Link>
-          {/* <Link
-            href="#groups"
-            onClick={() => setMenuOpen(false)}
-            className="text-lg px-4 py-2 hover:bg-white hover:text-black rounded-full transition"
-          >
-            For groups
-          </Link> */}
+
           <Link
             href="#contact"
             onClick={() => setMenuOpen(false)}
