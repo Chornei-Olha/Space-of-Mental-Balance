@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["500"] });
 
 export default function Footer() {
   return (
-    <footer className="relative w-full">
+    <footer id="contact" className="relative w-full">
       <div className="absolute z-0 bottom-0 left-0 w-[80px] sm:w-[100px] md:w-[140px]">
         <Image
           src="/assets/bitmap.png"
@@ -51,16 +51,13 @@ export default function Footer() {
                   For groups
                 </a>
               </li>
-              <li>
-                <a href="#contacts" className="hover:underline">
-                  Contacts
-                </a>
-              </li>
             </ul>
           </div>
 
           {/* Elena & Iryna's Contacts (центральная колонка) */}
           <div className={`text-center font-normal ${poppins.className}`}>
+            <h3 className="border-b border-black ">Contacts</h3>
+
             {/* Елена */}
             <div className="mt-6 md:mt-0">
               <div className="mb-4 w-full" />
@@ -90,12 +87,20 @@ export default function Footer() {
                 >
                   <FaFacebook className="text-xl" />
                 </a>
+                <a
+                  href="https://wa.me/447927673728"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-black transition"
+                >
+                  <FaWhatsapp className="text-xl" />
+                </a>
               </div>
             </div>
 
             {/* Ирина */}
             <div className="mt-10">
-              <div className="border-b border-black mb-4 w-full" />
+              <div className="mb-4 w-full" />
               <p className="uppercase font-semibold text-sm tracking-widest mb-2">
                 Iryna’s Contacts
               </p>
@@ -117,19 +122,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          {/* CONTACTS */}
-          {/* <div className="text-left md:text-right space-y-2">
-          <p className="text-sm font-medium">
-            {" "}
-            <a href="tel:07927673728" className="hover:underline">
-              07927 673 728
-            </a>
-          </p>
-          <p className="text-sm text-gray-700">
-            info@peaceofmind-therapy.co.uk
-          </p>
-        </div> */}
         </div>
 
         {/* Bottom Section */}

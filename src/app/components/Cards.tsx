@@ -79,28 +79,30 @@ export default function EducationSection() {
                 <div
                   className={`absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl font-normal ${dmSans.className}`}
                 >
-                  Individual therapeutic counseling{" "}
+                  Therapeutic Counselling Sessions{" "}
                 </div>
               </div>
-              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row h-[200px] sm:h-[150px] md:h-[200px] lg:h-[150px]">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
                   <p
                     className={`text-sm sm:text-base font-normal ${inter.className}`}
                   >
-                    In the sessions, we gently accompany you in exploring your
-                    inner world, helping you to cope with anxiety, stress,
-                    crises and emotional ...
+                    Therapy isn’t about having the right words - it’s about
+                    having a space where you don’t have to hold it all together
+                    ...
                   </p>
-                  <button
-                    onClick={() =>
-                      openModal(
-                        "In these sessions, we gently accompany you as you explore your inner world. We help you to navigate and process anxiety, stress, crises, and emotional challenges. Together, we will work to develop self-awareness, build coping strategies, and foster personal growth. Through a warm, compassionate, and non-judgmental approach, we aim to support you in finding clarity, healing, and a renewed sense of strength and resilience."
-                      )
-                    }
-                    className="text-white text-sm mt-2 cursor-pointer underline"
-                  >
-                    more ...
-                  </button>
+                  <div className="flex justify-end mt-2">
+                    <button
+                      onClick={() =>
+                        openModal(
+                          "Therapy isn’t about having the right words - it’s about having a space where you don’t have to hold it all together.\n In our sessions, you’re invited to slow down, be real, and explore whatever’s on your mind or weighing on your heart. There’s no “right way” to begin. Whether you’re feeling anxious, disconnected, navigating relationship struggles or simply unsure of what’s next, we’ll work together to understand what’s happening beneath the surface and find what helps you feel more like yourself again.\n I work with both individuals and couples, offering:\n - 50-minute sessions for individuals\n - 60-minute sessions for couples\n You can choose to meet online, in-person in Christchurch, or even take therapy outdoors - with walk-and-talk sessions or creative work by the sea. For those who prefer more than just talking, I offer the option to explore with imagery, symbols, or gentle creative methods. No pressure, and no artistic skill needed - just curiosity and openness.\n Some clients come weekly for short-term support, others stay longer for deeper reflection and healing. There’s no fixed path - we shape it together.\n If you’re not sure where to start, that’s completely okay. I offer a free 30-minute call so you can ask questions, get a feel for how I work, and decide what feels right for you.\n"
+                        )
+                      }
+                      className="text-white text-sm mt-2 cursor-pointer underline"
+                    >
+                      more ...
+                    </button>
+                  </div>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
@@ -128,7 +130,7 @@ export default function EducationSection() {
             <div>
               <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden">
                 <Image
-                  src="/assets/Text2.png"
+                  src="/assets/Text2.webp"
                   alt="Картинка 2"
                   fill
                   className="object-cover"
@@ -152,7 +154,7 @@ export default function EducationSection() {
                   Creative group activities{" "}
                 </div>
               </div>
-              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row h-[200px] sm:h-[150px] md:h-[200px] lg:h-[150px]">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-[white] relative">
                   <p
                     className={`text-sm sm:text-base font-normal ${inter.className}`}
@@ -162,16 +164,18 @@ export default function EducationSection() {
                     elements of body practices and group dialog. It is a safe
                     and free space ...
                   </p>
-                  <button
-                    onClick={() =>
-                      openModal(
-                        "In our unique group sessions, we combine art therapy techniques, body-based practices, and group dialogue. This creates a safe and open space where participants can freely express themselves, connect with others, and explore their inner worlds. These groups encourage creativity, self-reflection, and shared experiences, fostering both personal growth and a sense of community. Participants are invited to discover new ways of understanding themselves and others through artistic expression, movement, and meaningful conversation."
-                      )
-                    }
-                    className="text-white text-sm mt-2 cursor-pointer underline"
-                  >
-                    more ...
-                  </button>
+                  <div className="flex justify-end mt-2">
+                    <button
+                      onClick={() =>
+                        openModal(
+                          "In our unique group sessions, we combine creative therapy techniques, body-based practices, and group dialogue. This creates a safe and open space where participants can freely express themselves, connect with others, and explore their inner worlds. These groups encourage creativity, self-reflection, and shared experiences, fostering both personal growth and a sense of community. Participants are invited to discover new ways of understanding themselves and others through artistic expression, movement, and meaningful conversation."
+                        )
+                      }
+                      className="text-white text-sm mt-2 cursor-pointer underline"
+                    >
+                      more ...
+                    </button>
+                  </div>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
@@ -199,7 +203,7 @@ export default function EducationSection() {
             <div>
               <div className="relative h-[200px] sm:h-[240px] md:h-[244px] lg:h-[320px] rounded-2xl overflow-hidden">
                 <Image
-                  src="/assets/Text3.png"
+                  src="/assets/Text3.webp"
                   alt="Картинка 3"
                   fill
                   className="object-cover"
@@ -220,10 +224,10 @@ export default function EducationSection() {
                 <div
                   className={`absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl font-normal ${dmSans.className}`}
                 >
-                  Personalized art lessons
+                  Personalised art lessons
                 </div>
               </div>
-              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row h-[200px] sm:h-[150px] md:h-[200px] lg:h-[150px]">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
                   <p
                     className={`text-sm sm:text-base font-normal ${inter.className}`}
@@ -233,16 +237,18 @@ export default function EducationSection() {
                     feelings through visual techniques and learn how to interact
                     with yourself through art. Lessons ...
                   </p>
-                  <button
-                    onClick={() =>
-                      openModal(
-                        "We will help you unlock your creativity, express your feelings through visual techniques, and learn how to connect with yourself through art. These lessons are tailored to your individual needs and goals, offering a safe and supportive environment where you can explore artistic expression at your own pace. Whether you’re a beginner or an experienced artist, our sessions guide you to discover new dimensions of self-understanding, emotional release, and personal growth through the power of creativity."
-                      )
-                    }
-                    className="text-white text-sm mt-2 cursor-pointer underline"
-                  >
-                    more ...
-                  </button>
+                  <div className="flex justify-end mt-2">
+                    <button
+                      onClick={() =>
+                        openModal(
+                          "We will help you unlock your creativity, express your feelings through visual techniques, and learn how to connect with yourself through art. These lessons are tailored to your individual needs and goals, offering a safe and supportive environment where you can explore artistic expression at your own pace. Whether you’re a beginner or an experienced artist, our sessions guide you to discover new dimensions of self-understanding, emotional release, and personal growth through the power of creativity."
+                        )
+                      }
+                      className="text-white text-sm mt-2 cursor-pointer underline"
+                    >
+                      more ...
+                    </button>
+                  </div>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
@@ -291,29 +297,31 @@ export default function EducationSection() {
                   }}
                 ></div>
                 <div className="absolute bottom-0 py-4 px-4 w-full text-white text-left text-lg sm:text-2xl">
-                  Consultations for organizations and groups{" "}
+                  Consultations for Organisations and Groups
                 </div>
               </div>
-              <div className="flex gap-0 mt-4 flex-col sm:flex-row">
+              <div className="flex gap-0 mt-4 flex-col sm:flex-row h-[200px] sm:h-[150px] md:h-[200px] lg:h-[150px]">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base  font-inter text-white relative">
                   <p
                     className={`text-sm sm:text-base font-normal ${inter.className}`}
                   >
                     {" "}
-                    We design and deliver group programs for teams, educational
-                    institutions, volunteer and social organizations. Topics can
-                    range from emotional ...
+                    We offer bespoke consultations and creative wellbeing
+                    sessions for organisations, community groups, and teams
+                    looking to support emotional health ...
                   </p>
-                  <button
-                    onClick={() =>
-                      openModal(
-                        "We design and deliver customized group programs for teams, educational institutions, volunteer organizations, and social organizations. Our sessions can cover a wide range of topics, including emotional intelligence, stress management, communication skills, conflict resolution, team dynamics, and building a healthy work culture. Through interactive workshops and group discussions, we foster a supportive environment where participants can grow together, develop new skills, and strengthen relationships."
-                      )
-                    }
-                    className="text-white text-sm mt-2 cursor-pointer underline"
-                  >
-                    more ...
-                  </button>
+                  <div className="flex justify-end mt-2">
+                    <button
+                      onClick={() =>
+                        openModal(
+                          "We offer bespoke consultations and creative wellbeing sessions for organisations, community groups, and teams looking to support emotional health, communication, and connection in the workplace or shared spaces.\nWhether you’re charity, business, or creative collective, we can design sessions that meet your group’s unique needs - from reflective wellbeing workshops and art-based team building to emotional support sessions around change, stress, or burnout.\nOur work draws on therapeutic, relational, and creative practices to foster trust, reduce tension, and create safe spaces for expression. Sessions can be delivered as one-off events, ongoing group support, or part of a wider wellbeing programme.\nLet’s talk about how we can support your team or community in a way that feels meaningful, inclusive, and sustainable."
+                        )
+                      }
+                      className="text-white text-sm mt-2 cursor-pointer underline"
+                    >
+                      more ...
+                    </button>
+                  </div>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">

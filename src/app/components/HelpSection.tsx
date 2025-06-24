@@ -39,14 +39,16 @@ export default function HelpSection() {
             <h2
               className={`text-2xl md:text-3xl mb-4 text-[#2D2D2D] font-medium ${poppins.className}`}
             >
-              Do you need help?
+              A Place to Heal, Grow, and Create
             </h2>
             <p
               className={`text-[#2D2D2D] text-base md:text-sm md:w-[70%] font-normal ${poppins.className}`}
             >
-              We will provide detailed information about our services, types of
-              work, and top projects. We will calculate the cost and prepare a
-              commercial proposal.
+              Whether you’re seeking support, connection, or simply a creative
+              pause from daily life, you’re welcome here. We offer individual
+              and couples counselling, as well as group creative sessions that
+              encourage expression, reflection, and growth. Discover how we work
+              and take the first step toward positive change.
             </p>
           </div>
 

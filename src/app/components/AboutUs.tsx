@@ -10,7 +10,7 @@ import { Poppins, Manrope, Inter } from "next/font/google";
 // });
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "600"] });
 const manrope = Manrope({ subsets: ["latin"], weight: ["600"] });
-const inter = Inter({ subsets: ["latin"], weight: ["300"] });
+const inter = Inter({ subsets: ["latin"], weight: ["300", "700"] });
 
 export default function AboutUs() {
   const [modal1Open, setModal1Open] = useState(false);
@@ -387,14 +387,6 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           </div>
         )}
 
-        {/* Кнопки */}
-        <div
-          className={`flex justify-start md:justify-end my-6 space-x-4 font-light ${inter.className}`}
-        >
-          <button className="px-4 py-2 border bg-[#2437705E]/37 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
-            About us
-          </button>
-        </div>
         {/* Новая секция */}
         <div className="container px-4 mx-auto pb-10 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="md:col-span-2 md:col-start-2">
@@ -427,6 +419,14 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
 
               <div className="flex gap-0 mt-4 flex-col sm:flex-row">
                 <div className="bg-gradient-to-r from-[#D5C9B5] to-[#12DCDC] rounded-xl p-2 w-full sm:w-2/3 text-sm sm:text-base font-inter text-white relative">
+                  {/* Кнопки */}
+                  <div
+                    className={`flex justify-start md:justify-start my-6 space-x-4 font-light ${inter.className}`}
+                  >
+                    <button className="px-4 py-2 border bg-[#fff]/50 text-black border-gray-400 rounded-full text-sm hover:bg-white hover:text-black transition">
+                      About us
+                    </button>
+                  </div>
                   <p
                     className={`text-sm sm:text-base font-normal ${inter.className}`}
                   >
@@ -435,12 +435,14 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
                     Some collaborations are born from planning, others from
                     passion — and some simply grow out of friendship ...
                   </p>
-                  <button
-                    onClick={() => openModal(<OurStoryModalContent />)}
-                    className="text-white text-sm mt-2 cursor-pointer underline"
-                  >
-                    more ...
-                  </button>
+                  <div className="flex justify-end mt-2">
+                    <button
+                      onClick={() => openModal(<OurStoryModalContent />)}
+                      className="text-white text-sm mt-2 cursor-pointer underline"
+                    >
+                      more ...
+                    </button>
+                  </div>
                 </div>
 
                 <div className="relative bg-gradient-to-b from-[#12DCDC] to-[#FFFFFF] rounded-xl p-2 w-full sm:w-1/3 font-bold font-inter text-[#09234B] flex flex-col items-center justify-center">
@@ -472,11 +474,11 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
           <div className="gap-10 rounded-lg p-6 flex flex-col md:flex-row items-center text-[#243770]">
             <div className="bg-[#07512A42]/26 rounded-xl p-4 relative mb-4 w-full flex justify-center">
               <Image
-                src="/assets/therapist1.webp"
+                src="/assets/therapist.webp"
                 alt="Iryna"
                 width={300}
                 height={300}
-                className="object-cover z-10 rounded-xl"
+                className="object-contain z-10 rounded-xl h-[300px]"
               />
             </div>
             <div className="flex flex-col w-full">
@@ -526,7 +528,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
                 alt="Olena"
                 width={300}
                 height={300}
-                className="object-cover z-10 rounded-xl"
+                className="object-cover z-10 rounded-xl h-[300px]"
               />
             </div>
           </div>
