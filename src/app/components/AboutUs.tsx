@@ -478,7 +478,7 @@ Today, my art is no longer just a hobby but a way of serving people in a creativ
                 alt="Iryna"
                 width={300}
                 height={300}
-                className="object-contain z-10 rounded-xl h-[300px]"
+                className="object-cover z-10 rounded-xl h-[300px]"
               />
             </div>
             <div className="flex flex-col w-full">
