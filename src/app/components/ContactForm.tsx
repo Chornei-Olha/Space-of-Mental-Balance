@@ -129,7 +129,7 @@ export default function ContactForm() {
         <br />
         Send us a message{" "}
       </h1>
-      <div className="z-[50] w-[80%] sm:max-w-[480px] shadow-md rounded-xl px-4 py-10 border-7 border-white/50 mb-[150px] sm:mb-[50px] mx-auto sm:ml-[16%] bg-white relative">
+      <div className="z-[50] w-[90%] sm:max-w-[480px] shadow-md rounded-xl px-4 py-10 border-7 border-white/50 mb-[150px] sm:mb-[50px] mx-auto sm:ml-[16%] bg-white relative">
         {/* Flower2 */}
         <div className="absolute top-[-100px] left-[50%] z-55 h-[auto] w-[50px] sm:w-[60px] md:w-[70px]">
           <Image
