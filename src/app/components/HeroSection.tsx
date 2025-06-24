@@ -56,7 +56,7 @@ export default function HeroSection() {
         loop
         playsInline
         muted={isMuted}
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 scale-[1.23]"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 scale-[1.41]"
       >
         <source src="/assets/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -113,9 +113,9 @@ export default function HeroSection() {
             <p
               className={`max-w-xl text-lg md:text-xl text-medium mx-auto md:mx-0 font-medium ${instrumentSans.className}`}
             >
-              Welcome to a space of mental balance and inner healing. We combine
-              professional therapeutic practices with creative methods to help
-              you restore harmony of body, mind and spirit.
+              Step into a space where words aren’t your only language. Whether
+              you speak through stories, silence, colour or movement — we’re
+              here to explore it together, gently and creatively, at your pace
             </p>
             <div className="flex items-center gap-3 justify-left md:justify-start">
               <Image

@@ -4,20 +4,19 @@ import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
+import toast from "react-hot-toast";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    phone: "+44",
     email: "",
     comment: "",
     consentInfo: false,
     consentPolicy: false,
   });
-
-  const [status, setStatus] = useState<string | null>(null);
 
   const isValid = formData.consentInfo;
 
@@ -41,22 +40,29 @@ export default function ContactForm() {
     e.preventDefault();
 
     if (!isValid) {
-      setStatus("Please confirm your consent");
+      toast.error("Please confirm your consent");
       return;
     }
 
-    setStatus("Sending your email...");
+    const phoneRegex = /^\+?\d+$/;
+    if (!phoneRegex.test(formData.phone)) {
+      toast.error(
+        "Phone number must contain only digits and an optional leading '+'"
+      );
+      return;
+    }
+
+    toast.loading("Sending your email...");
 
     try {
-      await emailjs.send(
-        "service_hqwpr5u", // ваш Service ID
-        "template_edgm3bn", // ваш Template ID
-        {
-          name: formData.name,
-          phone: formData.phone,
-        }
-      );
-      setStatus("Email sent successfully!");
+      await emailjs.send("service_hqwpr5u", "template_edgm3bn", {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        comment: formData.comment,
+      });
+      toast.dismiss(); // прибираємо попередній toast
+      toast.success("Email sent successfully!");
       setFormData({
         name: "",
         phone: "",
@@ -67,7 +73,8 @@ export default function ContactForm() {
       });
     } catch (error) {
       console.error(error);
-      setStatus("Failed to send email.");
+      toast.dismiss();
+      toast.error("Failed to send email.");
     }
   };
 
@@ -192,10 +199,10 @@ export default function ContactForm() {
             <input
               type="tel"
               name="phone"
-              placeholder="+44 (___) ___ - __ - __"
+              placeholder="+44 (____) __ - __ - __"
               value={formData.phone}
               onChange={handleChange}
-              maxLength={20}
+              maxLength={13}
               className="w-full text-[#4A4A4A] text-base font-inter outline-none"
               required
             />
@@ -218,7 +225,7 @@ export default function ContactForm() {
               placeholder="E-mail"
               value={formData.email}
               onChange={handleChange}
-              maxLength={20}
+              maxLength={100}
               className="w-full text-[#4A4A4A] text-base font-inter outline-none"
               required
             />
@@ -263,11 +270,11 @@ export default function ContactForm() {
             </label>
           </div>
 
-          {status && (
+          {/* {status && (
             <div className="text-center mt-4">
               <p className="text-sm font-semibold">{status}</p>
             </div>
-          )}
+          )} */}
 
           {/* Submit */}
           <div>

@@ -43,12 +43,12 @@ export default function Header() {
         >
           Services
         </Link>
-        <Link
+        {/* <Link
           href="#groups"
           className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
         >
           For groups
-        </Link>
+        </Link> */}
         <Link
           href="#contact"
           className="px-4 py-2 border border-white rounded-full text-white text-sm hover:bg-white hover:text-black transition"
@@ -83,13 +83,13 @@ export default function Header() {
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             href="#groups"
             onClick={() => setMenuOpen(false)}
             className="text-lg px-4 py-2 hover:bg-white hover:text-black rounded-full transition"
           >
             For groups
-          </Link>
+          </Link> */}
           <Link
             href="#contact"
             onClick={() => setMenuOpen(false)}

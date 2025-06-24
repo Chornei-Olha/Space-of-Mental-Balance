@@ -8,6 +8,7 @@ import {
   Space_Grotesk,
 } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 // Импортируем шрифты
 const instrumentSans = Instrument_Sans({ subsets: ["latin"], weight: ["500"] });
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${instrumentSans.className} ${poppins.className} ${manrope.className} ${dmSans.className} ${inter.className} ${spaceGrotesk.className}`}
       >
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );
