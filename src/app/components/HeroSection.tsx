@@ -129,7 +129,7 @@ export default function HeroSection() {
                 <span
                   className={`text-base text-white font-medium ${manrope.className}`}
                 >
-                  Rating reviews from 10k people
+                  Rating reviews from 150 people
                 </span>
               </div>
             </div>
