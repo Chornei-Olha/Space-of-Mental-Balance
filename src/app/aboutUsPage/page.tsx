@@ -166,13 +166,18 @@ export default function AboutUsPage() {
               With warmth and creativity,
               <br />
               Iryna & Olena
-              <br />
-              Peace of Mind Therapy
             </p>
+            <div className="relative w-full h-[80px] mt-6 rounded-2xl overflow-hidden">
+              <Image
+                src="/assets/logo2.png"
+                alt="about Us"
+                fill
+                className="object-contain h-[auto] w-[100%] mx-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
-
       <ContactForm />
       <Footer />
     </main>

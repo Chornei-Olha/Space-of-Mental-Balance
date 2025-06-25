@@ -8,6 +8,7 @@ import {
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import { Poppins, Inter } from "next/font/google";
+import Link from "next/link";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
 const inter = Inter({ subsets: ["latin"], weight: ["500"] });
@@ -37,19 +38,20 @@ export default function Footer() {
               className={`space-y-2 text-base font-normal ${poppins.className}`}
             >
               <li>
-                <a href="#about" className="hover:underline">
+                {" "}
+                <Link href="/#about" className="hover:underline">
                   About us
-                </a>
-              </li>
+                </Link>
+              </li>{" "}
               <li>
-                <a href="#services" className="hover:underline">
+                <Link href="/#services" className="hover:underline">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#groups" className="hover:underline">
+                <Link href="/#groups" className="hover:underline">
                   For groups
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -122,10 +124,20 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center items-center">
+            <div className="relative w-[150px] h-[200px] md:w-[220px] md:h-[260px]">
+              <Image
+                src="/assets/tree-black.webp"
+                alt="Tree"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-row justify-between mt-12 border-black pt-6 gap-4">
+        <div className="flex flex-row justify-between border-black pt-6 gap-4">
           <p className={`text-xs text-gray-700 font-medium ${inter.className}`}>
             © 2025 —{" "}
             <a href="https://impuls-studio.com.ua/" className="hover:underline">
